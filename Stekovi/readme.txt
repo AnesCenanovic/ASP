@@ -1,0 +1,1 @@
+Implementacija generičkog i običnog steka.
