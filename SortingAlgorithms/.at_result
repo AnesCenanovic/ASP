@@ -1,0 +1,483 @@
+{
+    "buildhost_description": {
+        "id": "etf.c9prim2",
+        "os": "Linux 5.13.0-39-generic x86_64\nUbuntu 20.04.4 LTS\n"
+    },
+    "tools": {
+        "compile": "9.4.0",
+        "compile[debug]": "9.4.0",
+        "debug": "9.2",
+        "profile[memcheck]": "valgrind-3.15.0",
+        "profile[sgcheck]": "valgrind-3.15.0"
+    },
+    "status": 4,
+    "test_results": {
+        "1586": {
+            "success": true,
+            "status": 1,
+            "tools": {
+                "patch": {
+                    "success": true
+                },
+                "compile[debug]": {
+                    "status": 1,
+                    "duration": 0,
+                    "output": "main.cpp: In function ‘int _main()’:\nmain.cpp:185:1: warning: no return statement in function returning non-void [-Wreturn-type]\n  185 | }\n      | ^",
+                    "exit_code": 0,
+                    "success": true,
+                    "parsed_output": [
+                        {
+                            "type": "warning",
+                            "file": "TEST_CODE",
+                            "line": 0,
+                            "col": "1",
+                            "message": "no return statement in function returning non-void",
+                            "code": "}"
+                        }
+                    ]
+                },
+                "execute": {
+                    "output": "1 2 3 5 8",
+                    "duration": 0,
+                    "status": 1,
+                    "exit_code": 0,
+                    "success": true
+                },
+                "debug": {
+                    "success": true
+                },
+                "profile[memcheck]": {
+                    "status": 1,
+                    "duration": 1,
+                    "output": "==3503214== Memcheck, a memory error detector\n==3503214== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.\n==3503214== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info\n==3503214== Command: outputj0D6zD\n==3503214==\n====START_TEST_3293====1 2 3 5 8 ====END_TEST_3293======3503214==\n==3503214== HEAP SUMMARY:\n==3503214==     in use at exit: 0 bytes in 0 blocks\n==3503214==   total heap usage: 2 allocs, 2 frees, 76,800 bytes allocated\n==3503214==\n==3503214== All heap blocks were freed -- no leaks are possible\n==3503214==\n==3503214== For lists of detected and suppressed errors, rerun with: -s\n==3503214== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)",
+                    "exit_code": 0,
+                    "success": true,
+                    "parsed_output": []
+                },
+                "profile[sgcheck]": {
+                    "status": 1,
+                    "duration": 6,
+                    "output": "==3503228== exp-sgcheck, a stack and global array overrun detector\n==3503228== NOTE: This is an Experimental-Class Valgrind Tool\n==3503228== Copyright (C) 2003-2017, and GNU GPL'd, by OpenWorks Ltd et al.\n==3503228== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info\n==3503228== Command: outputj0D6zD\n==3503228==\n--3503228-- warning: evaluate_Dwarf3_Expr: unhandled DW_OP_ 0x93\n--3503228-- warning: evaluate_Dwarf3_Expr: unhandled DW_OP_ 0x93\n--3503228-- warning: evaluate_Dwarf3_Expr: unhandled DW_OP_ 0x93\n--3503228-- warning: evaluate_Dwarf3_Expr: unhandled DW_OP_ 0x93\n--3503228-- warning: evaluate_Dwarf3_Expr: unhandled DW_OP_ 0x93\n--3503228-- warning: evaluate_Dwarf3_Expr: unhandled DW_OP_ 0x93\n--3503228-- warning: evaluate_Dwarf3_Expr: unhandled DW_OP_ 0x93\n--3503228-- warning: evaluate_Dwarf3_Expr: unhandled DW_OP_ 0x93\n====START_TEST_3293====1 2 3 5 8 ====END_TEST_3293======3503228==\n==3503228== For lists of detected and suppressed errors, rerun with: -s\n==3503228== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 2 from 2)",
+                    "exit_code": 0,
+                    "success": true,
+                    "parsed_output": []
+                }
+            }
+        },
+        "1587": {
+            "success": true,
+            "status": 1,
+            "tools": {
+                "patch": {
+                    "success": true
+                },
+                "compile[debug]": {
+                    "status": 1,
+                    "duration": 1,
+                    "output": "main.cpp: In function ‘int _main()’:\nmain.cpp:185:1: warning: no return statement in function returning non-void [-Wreturn-type]\n  185 | }\n      | ^",
+                    "exit_code": 0,
+                    "success": true,
+                    "parsed_output": [
+                        {
+                            "type": "warning",
+                            "file": "TEST_CODE",
+                            "line": 0,
+                            "col": "1",
+                            "message": "no return statement in function returning non-void",
+                            "code": "}"
+                        }
+                    ]
+                },
+                "execute": {
+                    "output": "1 2 3 5 8",
+                    "duration": 0,
+                    "status": 1,
+                    "exit_code": 0,
+                    "success": true
+                },
+                "debug": {
+                    "success": true
+                },
+                "profile[memcheck]": {
+                    "status": 1,
+                    "duration": 1,
+                    "output": "==3503320== Memcheck, a memory error detector\n==3503320== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.\n==3503320== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info\n==3503320== Command: output2fPrZB\n==3503320==\n====START_TEST_1472====1 2 3 5 8 ====END_TEST_1472======3503320==\n==3503320== HEAP SUMMARY:\n==3503320==     in use at exit: 0 bytes in 0 blocks\n==3503320==   total heap usage: 2 allocs, 2 frees, 76,800 bytes allocated\n==3503320==\n==3503320== All heap blocks were freed -- no leaks are possible\n==3503320==\n==3503320== For lists of detected and suppressed errors, rerun with: -s\n==3503320== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)",
+                    "exit_code": 0,
+                    "success": true,
+                    "parsed_output": []
+                },
+                "profile[sgcheck]": {
+                    "status": 1,
+                    "duration": 6,
+                    "output": "==3503332== exp-sgcheck, a stack and global array overrun detector\n==3503332== NOTE: This is an Experimental-Class Valgrind Tool\n==3503332== Copyright (C) 2003-2017, and GNU GPL'd, by OpenWorks Ltd et al.\n==3503332== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info\n==3503332== Command: output2fPrZB\n==3503332==\n--3503332-- warning: evaluate_Dwarf3_Expr: unhandled DW_OP_ 0x93\n--3503332-- warning: evaluate_Dwarf3_Expr: unhandled DW_OP_ 0x93\n--3503332-- warning: evaluate_Dwarf3_Expr: unhandled DW_OP_ 0x93\n--3503332-- warning: evaluate_Dwarf3_Expr: unhandled DW_OP_ 0x93\n--3503332-- warning: evaluate_Dwarf3_Expr: unhandled DW_OP_ 0x93\n--3503332-- warning: evaluate_Dwarf3_Expr: unhandled DW_OP_ 0x93\n--3503332-- warning: evaluate_Dwarf3_Expr: unhandled DW_OP_ 0x93\n--3503332-- warning: evaluate_Dwarf3_Expr: unhandled DW_OP_ 0x93\n====START_TEST_1472====1 2 3 5 8 ====END_TEST_1472======3503332==\n==3503332== For lists of detected and suppressed errors, rerun with: -s\n==3503332== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 2 from 2)",
+                    "exit_code": 0,
+                    "success": true,
+                    "parsed_output": []
+                }
+            }
+        },
+        "1588": {
+            "success": true,
+            "status": 1,
+            "tools": {
+                "patch": {
+                    "success": true
+                },
+                "compile[debug]": {
+                    "status": 1,
+                    "duration": 1,
+                    "output": "main.cpp: In function ‘int _main()’:\nmain.cpp:185:1: warning: no return statement in function returning non-void [-Wreturn-type]\n  185 | }\n      | ^",
+                    "exit_code": 0,
+                    "success": true,
+                    "parsed_output": [
+                        {
+                            "type": "warning",
+                            "file": "TEST_CODE",
+                            "line": 0,
+                            "col": "1",
+                            "message": "no return statement in function returning non-void",
+                            "code": "}"
+                        }
+                    ]
+                },
+                "execute": {
+                    "output": "1 2 3 5 8",
+                    "duration": 0,
+                    "status": 1,
+                    "exit_code": 0,
+                    "success": true
+                },
+                "debug": {
+                    "success": true
+                },
+                "profile[memcheck]": {
+                    "status": 1,
+                    "duration": 1,
+                    "output": "==3503419== Memcheck, a memory error detector\n==3503419== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.\n==3503419== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info\n==3503419== Command: outputcSqoDF\n==3503419==\n====START_TEST_9447====1 2 3 5 8 ====END_TEST_9447======3503419==\n==3503419== HEAP SUMMARY:\n==3503419==     in use at exit: 0 bytes in 0 blocks\n==3503419==   total heap usage: 2 allocs, 2 frees, 76,800 bytes allocated\n==3503419==\n==3503419== All heap blocks were freed -- no leaks are possible\n==3503419==\n==3503419== For lists of detected and suppressed errors, rerun with: -s\n==3503419== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)",
+                    "exit_code": 0,
+                    "success": true,
+                    "parsed_output": []
+                },
+                "profile[sgcheck]": {
+                    "status": 1,
+                    "duration": 6,
+                    "output": "==3503445== exp-sgcheck, a stack and global array overrun detector\n==3503445== NOTE: This is an Experimental-Class Valgrind Tool\n==3503445== Copyright (C) 2003-2017, and GNU GPL'd, by OpenWorks Ltd et al.\n==3503445== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info\n==3503445== Command: outputcSqoDF\n==3503445==\n--3503445-- warning: evaluate_Dwarf3_Expr: unhandled DW_OP_ 0x93\n--3503445-- warning: evaluate_Dwarf3_Expr: unhandled DW_OP_ 0x93\n--3503445-- warning: evaluate_Dwarf3_Expr: unhandled DW_OP_ 0x93\n--3503445-- warning: evaluate_Dwarf3_Expr: unhandled DW_OP_ 0x93\n--3503445-- warning: evaluate_Dwarf3_Expr: unhandled DW_OP_ 0x93\n--3503445-- warning: evaluate_Dwarf3_Expr: unhandled DW_OP_ 0x93\n--3503445-- warning: evaluate_Dwarf3_Expr: unhandled DW_OP_ 0x93\n--3503445-- warning: evaluate_Dwarf3_Expr: unhandled DW_OP_ 0x93\n====START_TEST_9447====1 2 3 5 8 ====END_TEST_9447======3503445==\n==3503445== For lists of detected and suppressed errors, rerun with: -s\n==3503445== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 2 from 2)",
+                    "exit_code": 0,
+                    "success": true,
+                    "parsed_output": []
+                }
+            }
+        },
+        "1589": {
+            "success": true,
+            "status": 1,
+            "tools": {
+                "patch": {
+                    "success": true
+                },
+                "compile[debug]": {
+                    "status": 1,
+                    "duration": 0,
+                    "output": "main.cpp: In function ‘int _main()’:\nmain.cpp:185:1: warning: no return statement in function returning non-void [-Wreturn-type]\n  185 | }\n      | ^",
+                    "exit_code": 0,
+                    "success": true,
+                    "parsed_output": [
+                        {
+                            "type": "warning",
+                            "file": "TEST_CODE",
+                            "line": 0,
+                            "col": "1",
+                            "message": "no return statement in function returning non-void",
+                            "code": "}"
+                        }
+                    ]
+                },
+                "execute": {
+                    "output": "1 2 3 5 8",
+                    "duration": 0,
+                    "status": 1,
+                    "exit_code": 0,
+                    "success": true
+                },
+                "debug": {
+                    "success": true
+                },
+                "profile[memcheck]": {
+                    "status": 1,
+                    "duration": 1,
+                    "output": "==3503538== Memcheck, a memory error detector\n==3503538== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.\n==3503538== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info\n==3503538== Command: outputkgKAwC\n==3503538==\n====START_TEST_3516====1 2 3 5 8 ====END_TEST_3516======3503538==\n==3503538== HEAP SUMMARY:\n==3503538==     in use at exit: 0 bytes in 0 blocks\n==3503538==   total heap usage: 6 allocs, 6 frees, 76,848 bytes allocated\n==3503538==\n==3503538== All heap blocks were freed -- no leaks are possible\n==3503538==\n==3503538== For lists of detected and suppressed errors, rerun with: -s\n==3503538== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)",
+                    "exit_code": 0,
+                    "success": true,
+                    "parsed_output": []
+                },
+                "profile[sgcheck]": {
+                    "status": 1,
+                    "duration": 5,
+                    "output": "==3503550== exp-sgcheck, a stack and global array overrun detector\n==3503550== NOTE: This is an Experimental-Class Valgrind Tool\n==3503550== Copyright (C) 2003-2017, and GNU GPL'd, by OpenWorks Ltd et al.\n==3503550== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info\n==3503550== Command: outputkgKAwC\n==3503550==\n--3503550-- warning: evaluate_Dwarf3_Expr: unhandled DW_OP_ 0x93\n--3503550-- warning: evaluate_Dwarf3_Expr: unhandled DW_OP_ 0x93\n--3503550-- warning: evaluate_Dwarf3_Expr: unhandled DW_OP_ 0x93\n--3503550-- warning: evaluate_Dwarf3_Expr: unhandled DW_OP_ 0x93\n--3503550-- warning: evaluate_Dwarf3_Expr: unhandled DW_OP_ 0x93\n--3503550-- warning: evaluate_Dwarf3_Expr: unhandled DW_OP_ 0x93\n--3503550-- warning: evaluate_Dwarf3_Expr: unhandled DW_OP_ 0x93\n--3503550-- warning: evaluate_Dwarf3_Expr: unhandled DW_OP_ 0x93\n====START_TEST_3516====1 2 3 5 8 ====END_TEST_3516======3503550==\n==3503550== For lists of detected and suppressed errors, rerun with: -s\n==3503550== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 2 from 2)",
+                    "exit_code": 0,
+                    "success": true,
+                    "parsed_output": []
+                }
+            }
+        },
+        "1590": {
+            "success": true,
+            "status": 1,
+            "tools": {
+                "patch": {
+                    "success": true
+                },
+                "compile[debug]": {
+                    "status": 1,
+                    "duration": 1,
+                    "output": "main.cpp: In function ‘int _main()’:\nmain.cpp:185:1: warning: no return statement in function returning non-void [-Wreturn-type]\n  185 | }\n      | ^",
+                    "exit_code": 0,
+                    "success": true,
+                    "parsed_output": [
+                        {
+                            "type": "warning",
+                            "file": "TEST_CODE",
+                            "line": 0,
+                            "col": "1",
+                            "message": "no return statement in function returning non-void",
+                            "code": "}"
+                        }
+                    ]
+                },
+                "execute": {
+                    "output": "OK",
+                    "duration": 0,
+                    "status": 5,
+                    "exit_code": -1,
+                    "success": true
+                },
+                "debug": {
+                    "success": true
+                },
+                "profile[memcheck]": {
+                    "status": 1,
+                    "duration": 10,
+                    "output": "",
+                    "exit_code": 143,
+                    "success": true,
+                    "parsed_output": []
+                },
+                "profile[sgcheck]": {
+                    "status": 1,
+                    "duration": 10,
+                    "output": "",
+                    "exit_code": 143,
+                    "success": true,
+                    "parsed_output": []
+                }
+            }
+        },
+        "1591": {
+            "success": true,
+            "status": 1,
+            "tools": {
+                "patch": {
+                    "success": true
+                },
+                "compile[debug]": {
+                    "status": 1,
+                    "duration": 1,
+                    "output": "main.cpp: In function ‘int _main()’:\nmain.cpp:185:1: warning: no return statement in function returning non-void [-Wreturn-type]\n  185 | }\n      | ^",
+                    "exit_code": 0,
+                    "success": true,
+                    "parsed_output": [
+                        {
+                            "type": "warning",
+                            "file": "TEST_CODE",
+                            "line": 0,
+                            "col": "1",
+                            "message": "no return statement in function returning non-void",
+                            "code": "}"
+                        }
+                    ]
+                },
+                "execute": {
+                    "output": "OK",
+                    "duration": 3,
+                    "status": 5,
+                    "exit_code": -1,
+                    "success": true
+                },
+                "debug": {
+                    "success": true
+                },
+                "profile[memcheck]": {
+                    "status": 1,
+                    "duration": 10,
+                    "output": "",
+                    "exit_code": 143,
+                    "success": true,
+                    "parsed_output": []
+                },
+                "profile[sgcheck]": {
+                    "status": 1,
+                    "duration": 10,
+                    "output": "",
+                    "exit_code": 143,
+                    "success": true,
+                    "parsed_output": []
+                }
+            }
+        },
+        "1592": {
+            "success": true,
+            "status": 1,
+            "tools": {
+                "patch": {
+                    "success": true
+                },
+                "compile[debug]": {
+                    "status": 1,
+                    "duration": 1,
+                    "output": "main.cpp: In function ‘int _main()’:\nmain.cpp:185:1: warning: no return statement in function returning non-void [-Wreturn-type]\n  185 | }\n      | ^",
+                    "exit_code": 0,
+                    "success": true,
+                    "parsed_output": [
+                        {
+                            "type": "warning",
+                            "file": "TEST_CODE",
+                            "line": 0,
+                            "col": "1",
+                            "message": "no return statement in function returning non-void",
+                            "code": "}"
+                        }
+                    ]
+                },
+                "execute": {
+                    "output": "OK",
+                    "duration": 0,
+                    "status": 1,
+                    "exit_code": 0,
+                    "success": true
+                },
+                "debug": {
+                    "success": true
+                },
+                "profile[memcheck]": {
+                    "status": 1,
+                    "duration": 10,
+                    "output": "",
+                    "exit_code": 143,
+                    "success": true,
+                    "parsed_output": []
+                },
+                "profile[sgcheck]": {
+                    "status": 1,
+                    "duration": 10,
+                    "output": "",
+                    "exit_code": 143,
+                    "success": true,
+                    "parsed_output": []
+                }
+            }
+        },
+        "1593": {
+            "success": true,
+            "status": 1,
+            "tools": {
+                "patch": {
+                    "success": true
+                },
+                "compile[debug]": {
+                    "status": 1,
+                    "duration": 1,
+                    "output": "main.cpp: In function ‘int _main()’:\nmain.cpp:185:1: warning: no return statement in function returning non-void [-Wreturn-type]\n  185 | }\n      | ^",
+                    "exit_code": 0,
+                    "success": true,
+                    "parsed_output": [
+                        {
+                            "type": "warning",
+                            "file": "TEST_CODE",
+                            "line": 0,
+                            "col": "1",
+                            "message": "no return statement in function returning non-void",
+                            "code": "}"
+                        }
+                    ]
+                },
+                "execute": {
+                    "output": "OK",
+                    "duration": 3,
+                    "status": 1,
+                    "exit_code": 0,
+                    "success": true
+                },
+                "debug": {
+                    "success": true
+                },
+                "profile[memcheck]": {
+                    "status": 1,
+                    "duration": 10,
+                    "output": "",
+                    "exit_code": 143,
+                    "success": true,
+                    "parsed_output": []
+                },
+                "profile[sgcheck]": {
+                    "status": 1,
+                    "duration": 10,
+                    "output": "",
+                    "exit_code": 143,
+                    "success": true,
+                    "parsed_output": []
+                }
+            }
+        },
+        "1594": {
+            "success": false,
+            "status": 3,
+            "tools": {
+                "patch": {
+                    "success": true
+                },
+                "compile[debug]": {
+                    "status": 5,
+                    "duration": 0,
+                    "output": "main.cpp: In function ‘int _main()’:\nmain.cpp:185:1: warning: no return statement in function returning non-void [-Wreturn-type]\n  185 | }\n      | ^\nmain.cpp: In instantiation of ‘void quick_sort2(Tip*, int, int) [with Tip = std::__cxx11::basic_string<char>]’:\nmain.cpp:135:15:   required from ‘void quick_sort(Tip*, int) [with Tip = std::__cxx11::basic_string<char>]’\nmain.cpp:203:19:   required from here\nmain.cpp:115:23: error: no matching function for call to ‘particija(std::__cxx11::basic_string<char>*&, int&, int&)’\n  115 |        Tip j=particija(niz,prvi,zadnji);\n      |              ~~~~~~~~~^~~~~~~~~~~~~~~~~\nmain.cpp:68:5: note: candidate: ‘template<class Tip> Tip particija(Tip*, Tip, Tip)’\n   68 | Tip particija(Tip* niz, Tip prvi,Tip zadnji){\n      |     ^~~~~~~~~\nmain.cpp:68:5: note:   template argument deduction/substitution failed:\nmain.cpp:115:23: note:   deduced conflicting types for parameter ‘Tip’ (‘std::__cxx11::basic_string<char>’ and ‘int’)\n  115 |        Tip j=particija(niz,prvi,zadnji);\n      |              ~~~~~~~~~^~~~~~~~~~~~~~~~~\nmain.cpp:116:30: error: no match for ‘operator-’ (operand types are ‘std::__cxx11::basic_string<char>’ and ‘int’)\n  116 |        quick_sort2(niz,prvi,j-1);\n      |                             ~^~\nIn file included from /usr/include/c++/9/bits/stl_algobase.h:67,\n                 from /usr/include/c++/9/bits/char_traits.h:39,\n                 from /usr/include/c++/9/ios:40,\n                 from /usr/include/c++/9/ostream:38,\n                 from /usr/include/c++/9/iostream:39,\n                 from main.cpp:1:\n/usr/include/c++/9/bits/stl_iterator.h:415:5: note: candidate: ‘template<class _IteratorL, class _IteratorR> decltype ((__y.base() - __x.base())) std::operator-(const std::reverse_iterator<_Iterator>&, const std::reverse_iterator<_IteratorR>&)’\n  415 |     operator-(const reverse_iterator<_IteratorL>& __x,\n      |     ^~~~~~~~\n/usr/include/c++/9/bits/stl_iterator.h:415:5: note:   template argument deduction/substitution failed:\nmain.cpp:116:30: note:   ‘std::__cxx11::basic_string<char>’ is not derived from ‘const std::reverse_iterator<_Iterator>’\n  116 |        quick_sort2(niz,prvi,j-1);\n      |                             ~^~\nIn file included from /usr/include/c++/9/bits/stl_algobase.h:67,\n                 from /usr/include/c++/9/bits/char_traits.h:39,\n                 from /usr/include/c++/9/ios:40,\n                 from /usr/include/c++/9/ostream:38,\n                 from /usr/include/c++/9/iostream:39,\n                 from main.cpp:1:\n/usr/include/c++/9/bits/stl_iterator.h:1209:5: note: candidate: ‘template<class _IteratorL, class _IteratorR> decltype ((__x.base() - __y.base())) std::operator-(const std::move_iterator<_IteratorL>&, const std::move_iterator<_IteratorR>&)’\n 1209 |     operator-(const move_iterator<_IteratorL>& __x,\n      |     ^~~~~~~~\n/usr/include/c++/9/bits/stl_iterator.h:1209:5: note:   template argument deduction/substitution failed:\nmain.cpp:116:30: note:   ‘std::__cxx11::basic_string<char>’ is not derived from ‘const std::move_iterator<_IteratorL>’\n  116 |        quick_sort2(niz,prvi,j-1);\n      |                             ~^~\nIn file included from /usr/include/c++/9/bits/stl_algobase.h:67,\n                 from /usr/include/c++/9/bits/char_traits.h:39,\n                 from /usr/include/c++/9/ios:40,\n                 from /usr/include/c++/9/ostream:38,\n                 from /usr/include/c++/9/iostream:39,\n                 from main.cpp:1:\n/usr/include/c++/9/bits/stl_iterator.h:974:5: note: candidate: ‘template<class _IteratorL, class _IteratorR, class _Container> decltype ((__lhs.base() - __rhs.base())) __gnu_cxx::operator-(const __gnu_cxx::__normal_iterator<_IteratorL, _Container>&, const __gnu_cxx::__normal_iterator<_IteratorR, _Container>&)’\n  974 |     operator-(const __normal_iterator<_IteratorL, _Container>& __lhs,\n      |     ^~~~~~~~\n/usr/include/c++/9/bits/stl_iterator.h:974:5: note:   template argument deduction/substitution failed:\nmain.cpp:116:30: note:   ‘std::__cxx11::basic_string<char>’ is not derived from ‘const __gnu_cxx::__normal_iterator<_IteratorL, _Container>’\n  116 |        quick_sort2(niz,prvi,j-1);\n      |                             ~^~\nIn file included from /usr/include/c++/9/bits/stl_algobase.h:67,\n                 from /usr/include/c++/9/bits/char_traits.h:39,\n                 from /usr/include/c++/9/ios:40,\n                 from /usr/include/c++/9/ostream:38,\n                 from /usr/include/c++/9/iostream:39,\n                 from main.cpp:1:\n/usr/include/c++/9/bits/stl_iterator.h:986:5: note: candidate: ‘template<class _Iterator, class _Container> typename __gnu_cxx::__normal_iterator<_Iterator, _Container>::difference_type __gnu_cxx::operator-(const __gnu_cxx::__normal_iterator<_Iterator, _Container>&, const __gnu_cxx::__normal_iterator<_Iterator, _Container>&)’\n  986 |     operator-(const __normal_iterator<_Iterator, _Container>& __lhs,\n      |     ^~~~~~~~\n/usr/include/c++/9/bits/stl_iterator.h:986:5: note:   template argument deduction/substitution failed:\nmain.cpp:116:30: note:   ‘std::__cxx11::basic_string<char>’ is not derived from ‘const __gnu_cxx::__normal_iterator<_Iterator, _Container>’\n  116 |        quick_sort2(niz,prvi,j-1);\n      |                             ~^~\nmain.cpp:117:25: error: no match for ‘operator+’ (operand types are ‘std::__cxx11::basic_string<char>’ and ‘int’)\n  117 |        quick_sort2(niz,j+1,zadnji);\n      |                        ~^~\nIn file included from /usr/include/c++/9/bits/stl_algobase.h:67,\n                 from /usr/include/c++/9/bits/char_traits.h:39,\n                 from /usr/include/c++/9/ios:40,\n                 from /usr/include/c++/9/ostream:38,\n                 from /usr/include/c++/9/iostream:39,\n                 from main.cpp:1:\n/usr/include/c++/9/bits/stl_iterator.h:423:5: note: candidate: ‘template<class _Iterator> std::reverse_iterator<_Iterator> std::operator+(typename std::reverse_iterator<_Iterator>::difference_type, const std::reverse_iterator<_Iterator>&)’\n  423 |     operator+(typename reverse_iterator<_Iterator>::difference_type __n,\n      |     ^~~~~~~~\n/usr/include/c++/9/bits/stl_iterator.h:423:5: note:   template argument deduction/substitution failed:\nmain.cpp:117:25: note:   mismatched types ‘const std::reverse_iterator<_Iterator>’ and ‘int’\n  117 |        quick_sort2(niz,j+1,zadnji);\n      |                        ~^~\nIn file included from /usr/include/c++/9/bits/stl_algobase.h:67,\n                 from /usr/include/c++/9/bits/char_traits.h:39,\n                 from /usr/include/c++/9/ios:40,\n                 from /usr/include/c++/9/ostream:38,\n                 from /usr/include/c++/9/iostream:39,\n                 from main.cpp:1:\n/usr/include/c++/9/bits/stl_iterator.h:1216:5: note: candidate: ‘template<class _Iterator> std::move_iterator<_IteratorL> std::operator+(typename std::move_iterator<_IteratorL>::difference_type, const std::move_iterator<_IteratorL>&)’\n 1216 |     operator+(typename move_iterator<_Iterator>::difference_type __n,\n      |     ^~~~~~~~\n/usr/include/c++/9/bits/stl_iterator.h:1216:5: note:   template argument deduction/substitution failed:\nmain.cpp:117:25: note:   mismatched types ‘const std::move_iterator<_IteratorL>’ and ‘int’\n  117 |        quick_sort2(niz,j+1,zadnji);\n      |                        ~^~\nIn file included from /usr/include/c++/9/string:55,\n                 from /usr/include/c++/9/bits/locale_classes.h:40,\n                 from /usr/include/c++/9/bits/ios_base.h:41,\n                 from /usr/include/c++/9/ios:42,\n                 from /usr/include/c++/9/ostream:38,\n                 from /usr/include/c++/9/iostream:39,\n                 from main.cpp:1:\n/usr/include/c++/9/bits/basic_string.h:6023:5: note: candidate: ‘template<class _CharT, class _Traits, class _Alloc> std::__cxx11::basic_string<_CharT, _Traits, _Alloc> std::operator+(const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&, const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&)’\n 6023 |     operator+(const basic_string<_CharT, _Traits, _Alloc>& __lhs,\n      |     ^~~~~~~~\n/usr/include/c++/9/bits/basic_string.h:6023:5: note:   template argument deduction/substitution failed:\nmain.cpp:117:25: note:   mismatched types ‘const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>’ and ‘int’\n  117 |        quick_sort2(niz,j+1,zadnji);\n      |                        ~^~\nIn file included from /usr/include/c++/9/string:56,\n                 from /usr/include/c++/9/bits/locale_classes.h:40,\n                 from /usr/include/c++/9/bits/ios_base.h:41,\n                 from /usr/include/c++/9/ios:42,\n                 from /usr/include/c++/9/ostream:38,\n                 from /usr/include/c++/9/iostream:39,\n                 from main.cpp:1:\n/usr/include/c++/9/bits/basic_string.tcc:1158:5: note: candidate: ‘template<class _CharT, class _Traits, class _Alloc> std::__cxx11::basic_string<_CharT, _Traits, _Alloc> std::operator+(const _CharT*, const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&)’\n 1158 |     operator+(const _CharT* __lhs,\n      |     ^~~~~~~~\n/usr/include/c++/9/bits/basic_string.tcc:1158:5: note:   template argumen",
+                    "exit_code": 1,
+                    "success": false,
+                    "parsed_output": [
+                        {
+                            "type": "warning",
+                            "file": "TEST_CODE",
+                            "line": 0,
+                            "col": "1",
+                            "message": "no return statement in function returning non-void",
+                            "code": "}"
+                        },
+                        {
+                            "type": "error",
+                            "file": "main.cpp",
+                            "line": 115,
+                            "col": "23",
+                            "message": "no matching function for call to 'particija(std::__cxx11::basic_string<char>*&, int&, int&)'",
+                            "code": "Tip j=particija(niz,prvi,zadnji);"
+                        },
+                        {
+                            "type": "error",
+                            "file": "main.cpp",
+                            "line": 116,
+                            "col": "30",
+                            "message": "no match for 'operator-' (operand types are 'std::__cxx11::basic_string<char>' and 'int')",
+                            "code": "quick_sort2(niz,prvi,j-1);"
+                        },
+                        {
+                            "type": "error",
+                            "file": "main.cpp",
+                            "line": 117,
+                            "col": "25",
+                            "message": "no match for 'operator+' (operand types are 'std::__cxx11::basic_string<char>' and 'int')",
+                            "code": "quick_sort2(niz,j+1,zadnji);"
+                        }
+                    ]
+                }
+            }
+        }
+    },
+    "time": 1671372972
+}
