@@ -1,1 +1,18 @@
-This C++ project demonstrates the implementation of two types of associative containers (maps): a binary search tree-based map (BinStabloMapa) and an array-based map (NizMapa). Both classes are templates that support key-value pairs and provide functionality such as adding, deleting, and accessing elements. Additionally, performance testing is done for both implementations to compare execution time.
+This C++ code implements a generic map data structure.
+
+Features:
+
+* **Abstract Base Class:** Defines a common interface for different map implementations.
+* **Array-Based Implementation:** 'NizMapa' provides an array-based implementation.
+* **Hash Table Implementation:** 'HashMapa' provides a hash table-based implementation.
+
+To use:
+
+1. Include the header file (where this code is defined).
+2. Create an instance of 'NizMapa' or 'HashMapa'.
+3. Use the provided methods to insert, retrieve, and remove key-value pairs.
+
+Note:
+
+* 'HashMapa' requires a hash function to be defined.
+* This is a basic implementation and may not be suitable for all use cases.
