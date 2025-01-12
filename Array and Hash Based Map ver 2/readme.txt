@@ -1,0 +1,1 @@
+This code defines a generic map implementation in C++ using the template classes Mapa (abstract base class) and NizMapa (concrete derived class). The map stores key-value pairs and provides operations similar to standard map containers.
