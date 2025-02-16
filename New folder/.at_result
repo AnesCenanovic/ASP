@@ -1,0 +1,517 @@
+{
+    "buildhost_description": {
+        "id": "etf.c9prim2",
+        "os": "Linux 5.13.0-39-generic x86_64\nUbuntu 20.04.4 LTS\n"
+    },
+    "tools": {
+        "compile": "9.4.0",
+        "compile[debug]": "9.4.0",
+        "debug": "9.2",
+        "profile[memcheck]": "valgrind-3.15.0",
+        "profile[sgcheck]": "valgrind-3.15.0"
+    },
+    "status": 4,
+    "test_results": {
+        "1445": {
+            "success": false,
+            "status": 3,
+            "tools": {
+                "patch": {
+                    "success": true
+                },
+                "compile[debug]": {
+                    "status": 5,
+                    "duration": 0,
+                    "output": "main.cpp: In function ‘int main()’:\nmain.cpp:149:1: error: ‘Stek’ was not declared in this scope\n  149 | Stek<vector<int> > s;\n      | ^~~~\nmain.cpp:149:18: error: expected primary-expression before ‘>’ token\n  149 | Stek<vector<int> > s;\n      |                  ^\nmain.cpp:149:20: error: ‘s’ was not declared in this scope\n  149 | Stek<vector<int> > s;\n      |                    ^\nmain.cpp:163:1: error: ‘pretraga’ was not declared in this scope\n  163 | pretraga(s,10);\n      | ^~~~~~~~",
+                    "exit_code": 1,
+                    "success": false,
+                    "parsed_output": [
+                        {
+                            "type": "error",
+                            "file": "TEST_CODE",
+                            "line": 8,
+                            "col": "1",
+                            "message": "'Stek' was not declared in this scope",
+                            "code": "Stek<vector<int> > s;"
+                        },
+                        {
+                            "type": "error",
+                            "file": "TEST_CODE",
+                            "line": 8,
+                            "col": "18",
+                            "message": "expected primary-expression before '>' token",
+                            "code": "Stek<vector<int> > s;"
+                        },
+                        {
+                            "type": "error",
+                            "file": "TEST_CODE",
+                            "line": 8,
+                            "col": "20",
+                            "message": "'s' was not declared in this scope",
+                            "code": "Stek<vector<int> > s;"
+                        },
+                        {
+                            "type": "error",
+                            "file": "TEST_CODE",
+                            "line": 22,
+                            "col": "1",
+                            "message": "'pretraga' was not declared in this scope",
+                            "code": "pretraga(s,10);"
+                        }
+                    ]
+                }
+            }
+        },
+        "1446": {
+            "success": false,
+            "status": 3,
+            "tools": {
+                "patch": {
+                    "success": true
+                },
+                "compile[debug]": {
+                    "status": 5,
+                    "duration": 1,
+                    "output": "main.cpp: In function ‘int main()’:\nmain.cpp:148:1: error: ‘Stek’ was not declared in this scope\n  148 | Stek<vector<int> > s;\n      | ^~~~\nmain.cpp:148:18: error: expected primary-expression before ‘>’ token\n  148 | Stek<vector<int> > s;\n      |                  ^\nmain.cpp:148:20: error: ‘s’ was not declared in this scope\n  148 | Stek<vector<int> > s;\n      |                    ^\nmain.cpp:162:1: error: ‘pretraga’ was not declared in this scope\n  162 | pretraga(s,325435);\n      | ^~~~~~~~",
+                    "exit_code": 1,
+                    "success": false,
+                    "parsed_output": [
+                        {
+                            "type": "error",
+                            "file": "TEST_CODE",
+                            "line": 7,
+                            "col": "1",
+                            "message": "'Stek' was not declared in this scope",
+                            "code": "Stek<vector<int> > s;"
+                        },
+                        {
+                            "type": "error",
+                            "file": "TEST_CODE",
+                            "line": 7,
+                            "col": "18",
+                            "message": "expected primary-expression before '>' token",
+                            "code": "Stek<vector<int> > s;"
+                        },
+                        {
+                            "type": "error",
+                            "file": "TEST_CODE",
+                            "line": 7,
+                            "col": "20",
+                            "message": "'s' was not declared in this scope",
+                            "code": "Stek<vector<int> > s;"
+                        },
+                        {
+                            "type": "error",
+                            "file": "TEST_CODE",
+                            "line": 21,
+                            "col": "1",
+                            "message": "'pretraga' was not declared in this scope",
+                            "code": "pretraga(s,325435);"
+                        }
+                    ]
+                }
+            }
+        },
+        "1447": {
+            "success": false,
+            "status": 3,
+            "tools": {
+                "patch": {
+                    "success": true
+                },
+                "compile[debug]": {
+                    "status": 5,
+                    "duration": 0,
+                    "output": "main.cpp: In function ‘int main()’:\nmain.cpp:148:1: error: ‘Stek’ was not declared in this scope\n  148 | Stek<vector<int> > s;\n      | ^~~~\nmain.cpp:148:18: error: expected primary-expression before ‘>’ token\n  148 | Stek<vector<int> > s;\n      |                  ^\nmain.cpp:148:20: error: ‘s’ was not declared in this scope\n  148 | Stek<vector<int> > s;\n      |                    ^\nmain.cpp:162:1: error: ‘pretraga’ was not declared in this scope\n  162 | pretraga(s,11);\n      | ^~~~~~~~",
+                    "exit_code": 1,
+                    "success": false,
+                    "parsed_output": [
+                        {
+                            "type": "error",
+                            "file": "TEST_CODE",
+                            "line": 7,
+                            "col": "1",
+                            "message": "'Stek' was not declared in this scope",
+                            "code": "Stek<vector<int> > s;"
+                        },
+                        {
+                            "type": "error",
+                            "file": "TEST_CODE",
+                            "line": 7,
+                            "col": "18",
+                            "message": "expected primary-expression before '>' token",
+                            "code": "Stek<vector<int> > s;"
+                        },
+                        {
+                            "type": "error",
+                            "file": "TEST_CODE",
+                            "line": 7,
+                            "col": "20",
+                            "message": "'s' was not declared in this scope",
+                            "code": "Stek<vector<int> > s;"
+                        },
+                        {
+                            "type": "error",
+                            "file": "TEST_CODE",
+                            "line": 21,
+                            "col": "1",
+                            "message": "'pretraga' was not declared in this scope",
+                            "code": "pretraga(s,11);"
+                        }
+                    ]
+                }
+            }
+        },
+        "1448": {
+            "success": false,
+            "status": 3,
+            "tools": {
+                "patch": {
+                    "success": true
+                },
+                "compile[debug]": {
+                    "status": 5,
+                    "duration": 1,
+                    "output": "main.cpp: In function ‘int main()’:\nmain.cpp:148:1: error: ‘Stek’ was not declared in this scope\n  148 | Stek<vector<int> > s;\n      | ^~~~\nmain.cpp:148:18: error: expected primary-expression before ‘>’ token\n  148 | Stek<vector<int> > s;\n      |                  ^\nmain.cpp:148:20: error: ‘s’ was not declared in this scope\n  148 | Stek<vector<int> > s;\n      |                    ^\nmain.cpp:162:1: error: ‘pretraga’ was not declared in this scope\n  162 | pretraga(s,1);\n      | ^~~~~~~~",
+                    "exit_code": 1,
+                    "success": false,
+                    "parsed_output": [
+                        {
+                            "type": "error",
+                            "file": "TEST_CODE",
+                            "line": 7,
+                            "col": "1",
+                            "message": "'Stek' was not declared in this scope",
+                            "code": "Stek<vector<int> > s;"
+                        },
+                        {
+                            "type": "error",
+                            "file": "TEST_CODE",
+                            "line": 7,
+                            "col": "18",
+                            "message": "expected primary-expression before '>' token",
+                            "code": "Stek<vector<int> > s;"
+                        },
+                        {
+                            "type": "error",
+                            "file": "TEST_CODE",
+                            "line": 7,
+                            "col": "20",
+                            "message": "'s' was not declared in this scope",
+                            "code": "Stek<vector<int> > s;"
+                        },
+                        {
+                            "type": "error",
+                            "file": "TEST_CODE",
+                            "line": 21,
+                            "col": "1",
+                            "message": "'pretraga' was not declared in this scope",
+                            "code": "pretraga(s,1);"
+                        }
+                    ]
+                }
+            }
+        },
+        "1449": {
+            "success": false,
+            "status": 3,
+            "tools": {
+                "patch": {
+                    "success": true
+                },
+                "compile[debug]": {
+                    "status": 5,
+                    "duration": 0,
+                    "output": "main.cpp: In function ‘int main()’:\nmain.cpp:148:1: error: ‘Stek’ was not declared in this scope\n  148 | Stek<vector<int> > s;\n      | ^~~~\nmain.cpp:148:18: error: expected primary-expression before ‘>’ token\n  148 | Stek<vector<int> > s;\n      |                  ^\nmain.cpp:148:20: error: ‘s’ was not declared in this scope\n  148 | Stek<vector<int> > s;\n      |                    ^\nmain.cpp:153:1: error: ‘pretraga’ was not declared in this scope\n  153 | pretraga(s,999999);\n      | ^~~~~~~~",
+                    "exit_code": 1,
+                    "success": false,
+                    "parsed_output": [
+                        {
+                            "type": "error",
+                            "file": "TEST_CODE",
+                            "line": 7,
+                            "col": "1",
+                            "message": "'Stek' was not declared in this scope",
+                            "code": "Stek<vector<int> > s;"
+                        },
+                        {
+                            "type": "error",
+                            "file": "TEST_CODE",
+                            "line": 7,
+                            "col": "18",
+                            "message": "expected primary-expression before '>' token",
+                            "code": "Stek<vector<int> > s;"
+                        },
+                        {
+                            "type": "error",
+                            "file": "TEST_CODE",
+                            "line": 7,
+                            "col": "20",
+                            "message": "'s' was not declared in this scope",
+                            "code": "Stek<vector<int> > s;"
+                        },
+                        {
+                            "type": "error",
+                            "file": "TEST_CODE",
+                            "line": 12,
+                            "col": "1",
+                            "message": "'pretraga' was not declared in this scope",
+                            "code": "pretraga(s,999999);"
+                        }
+                    ]
+                }
+            }
+        },
+        "1450": {
+            "success": false,
+            "status": 3,
+            "tools": {
+                "patch": {
+                    "success": true
+                },
+                "compile[debug]": {
+                    "status": 5,
+                    "duration": 0,
+                    "output": "main.cpp: In function ‘int main()’:\nmain.cpp:148:1: error: ‘Stek’ was not declared in this scope\n  148 | Stek<vector<int> > s;\n      | ^~~~\nmain.cpp:148:18: error: expected primary-expression before ‘>’ token\n  148 | Stek<vector<int> > s;\n      |                  ^\nmain.cpp:148:20: error: ‘s’ was not declared in this scope\n  148 | Stek<vector<int> > s;\n      |                    ^\nmain.cpp:149:1: error: ‘pretraga’ was not declared in this scope\n  149 | pretraga(s,546);\n      | ^~~~~~~~",
+                    "exit_code": 1,
+                    "success": false,
+                    "parsed_output": [
+                        {
+                            "type": "error",
+                            "file": "TEST_CODE",
+                            "line": 7,
+                            "col": "1",
+                            "message": "'Stek' was not declared in this scope",
+                            "code": "Stek<vector<int> > s;"
+                        },
+                        {
+                            "type": "error",
+                            "file": "TEST_CODE",
+                            "line": 7,
+                            "col": "18",
+                            "message": "expected primary-expression before '>' token",
+                            "code": "Stek<vector<int> > s;"
+                        },
+                        {
+                            "type": "error",
+                            "file": "TEST_CODE",
+                            "line": 7,
+                            "col": "20",
+                            "message": "'s' was not declared in this scope",
+                            "code": "Stek<vector<int> > s;"
+                        },
+                        {
+                            "type": "error",
+                            "file": "TEST_CODE",
+                            "line": 8,
+                            "col": "1",
+                            "message": "'pretraga' was not declared in this scope",
+                            "code": "pretraga(s,546);"
+                        }
+                    ]
+                }
+            }
+        },
+        "1451": {
+            "success": false,
+            "status": 3,
+            "tools": {
+                "patch": {
+                    "success": true
+                },
+                "compile[debug]": {
+                    "status": 5,
+                    "duration": 1,
+                    "output": "main.cpp: In function ‘int main()’:\nmain.cpp:148:1: error: ‘Stek’ was not declared in this scope\n  148 | Stek<vector<int> > s;\n      | ^~~~\nmain.cpp:148:18: error: expected primary-expression before ‘>’ token\n  148 | Stek<vector<int> > s;\n      |                  ^\nmain.cpp:148:20: error: ‘s’ was not declared in this scope\n  148 | Stek<vector<int> > s;\n      |                    ^\nmain.cpp:161:1: error: ‘pretraga’ was not declared in this scope\n  161 | pretraga(s,2);\n      | ^~~~~~~~",
+                    "exit_code": 1,
+                    "success": false,
+                    "parsed_output": [
+                        {
+                            "type": "error",
+                            "file": "TEST_CODE",
+                            "line": 7,
+                            "col": "1",
+                            "message": "'Stek' was not declared in this scope",
+                            "code": "Stek<vector<int> > s;"
+                        },
+                        {
+                            "type": "error",
+                            "file": "TEST_CODE",
+                            "line": 7,
+                            "col": "18",
+                            "message": "expected primary-expression before '>' token",
+                            "code": "Stek<vector<int> > s;"
+                        },
+                        {
+                            "type": "error",
+                            "file": "TEST_CODE",
+                            "line": 7,
+                            "col": "20",
+                            "message": "'s' was not declared in this scope",
+                            "code": "Stek<vector<int> > s;"
+                        },
+                        {
+                            "type": "error",
+                            "file": "TEST_CODE",
+                            "line": 20,
+                            "col": "1",
+                            "message": "'pretraga' was not declared in this scope",
+                            "code": "pretraga(s,2);"
+                        }
+                    ]
+                }
+            }
+        },
+        "1452": {
+            "success": false,
+            "status": 3,
+            "tools": {
+                "patch": {
+                    "success": true
+                },
+                "compile[debug]": {
+                    "status": 5,
+                    "duration": 0,
+                    "output": "main.cpp: In function ‘int main()’:\nmain.cpp:148:1: error: ‘Stek’ was not declared in this scope\n  148 | Stek<vector<int> > s;\n      | ^~~~\nmain.cpp:148:18: error: expected primary-expression before ‘>’ token\n  148 | Stek<vector<int> > s;\n      |                  ^\nmain.cpp:148:20: error: ‘s’ was not declared in this scope\n  148 | Stek<vector<int> > s;\n      |                    ^\nmain.cpp:163:1: error: ‘pretraga’ was not declared in this scope\n  163 | pretraga(s,2);\n      | ^~~~~~~~",
+                    "exit_code": 1,
+                    "success": false,
+                    "parsed_output": [
+                        {
+                            "type": "error",
+                            "file": "TEST_CODE",
+                            "line": 7,
+                            "col": "1",
+                            "message": "'Stek' was not declared in this scope",
+                            "code": "Stek<vector<int> > s;"
+                        },
+                        {
+                            "type": "error",
+                            "file": "TEST_CODE",
+                            "line": 7,
+                            "col": "18",
+                            "message": "expected primary-expression before '>' token",
+                            "code": "Stek<vector<int> > s;"
+                        },
+                        {
+                            "type": "error",
+                            "file": "TEST_CODE",
+                            "line": 7,
+                            "col": "20",
+                            "message": "'s' was not declared in this scope",
+                            "code": "Stek<vector<int> > s;"
+                        },
+                        {
+                            "type": "error",
+                            "file": "TEST_CODE",
+                            "line": 22,
+                            "col": "1",
+                            "message": "'pretraga' was not declared in this scope",
+                            "code": "pretraga(s,2);"
+                        }
+                    ]
+                }
+            }
+        },
+        "1453": {
+            "success": false,
+            "status": 3,
+            "tools": {
+                "patch": {
+                    "success": true
+                },
+                "compile[debug]": {
+                    "status": 5,
+                    "duration": 1,
+                    "output": "main.cpp: In function ‘int main()’:\nmain.cpp:148:1: error: ‘Stek’ was not declared in this scope\n  148 | Stek<vector<int> > s;\n      | ^~~~\nmain.cpp:148:18: error: expected primary-expression before ‘>’ token\n  148 | Stek<vector<int> > s;\n      |                  ^\nmain.cpp:148:20: error: ‘s’ was not declared in this scope\n  148 | Stek<vector<int> > s;\n      |                    ^\nmain.cpp:162:1: error: ‘pretraga’ was not declared in this scope\n  162 | pretraga(s,254);\n      | ^~~~~~~~",
+                    "exit_code": 1,
+                    "success": false,
+                    "parsed_output": [
+                        {
+                            "type": "error",
+                            "file": "TEST_CODE",
+                            "line": 7,
+                            "col": "1",
+                            "message": "'Stek' was not declared in this scope",
+                            "code": "Stek<vector<int> > s;"
+                        },
+                        {
+                            "type": "error",
+                            "file": "TEST_CODE",
+                            "line": 7,
+                            "col": "18",
+                            "message": "expected primary-expression before '>' token",
+                            "code": "Stek<vector<int> > s;"
+                        },
+                        {
+                            "type": "error",
+                            "file": "TEST_CODE",
+                            "line": 7,
+                            "col": "20",
+                            "message": "'s' was not declared in this scope",
+                            "code": "Stek<vector<int> > s;"
+                        },
+                        {
+                            "type": "error",
+                            "file": "TEST_CODE",
+                            "line": 21,
+                            "col": "1",
+                            "message": "'pretraga' was not declared in this scope",
+                            "code": "pretraga(s,254);"
+                        }
+                    ]
+                }
+            }
+        },
+        "1454": {
+            "success": false,
+            "status": 3,
+            "tools": {
+                "patch": {
+                    "success": true
+                },
+                "compile[debug]": {
+                    "status": 5,
+                    "duration": 0,
+                    "output": "main.cpp: In function ‘int main()’:\nmain.cpp:148:1: error: ‘Stek’ was not declared in this scope\n  148 | Stek<vector<int> > s;\n      | ^~~~\nmain.cpp:148:18: error: expected primary-expression before ‘>’ token\n  148 | Stek<vector<int> > s;\n      |                  ^\nmain.cpp:148:20: error: ‘s’ was not declared in this scope\n  148 | Stek<vector<int> > s;\n      |                    ^\nmain.cpp:162:1: error: ‘pretraga’ was not declared in this scope\n  162 | pretraga(s,9999);\n      | ^~~~~~~~",
+                    "exit_code": 1,
+                    "success": false,
+                    "parsed_output": [
+                        {
+                            "type": "error",
+                            "file": "TEST_CODE",
+                            "line": 7,
+                            "col": "1",
+                            "message": "'Stek' was not declared in this scope",
+                            "code": "Stek<vector<int> > s;"
+                        },
+                        {
+                            "type": "error",
+                            "file": "TEST_CODE",
+                            "line": 7,
+                            "col": "18",
+                            "message": "expected primary-expression before '>' token",
+                            "code": "Stek<vector<int> > s;"
+                        },
+                        {
+                            "type": "error",
+                            "file": "TEST_CODE",
+                            "line": 7,
+                            "col": "20",
+                            "message": "'s' was not declared in this scope",
+                            "code": "Stek<vector<int> > s;"
+                        },
+                        {
+                            "type": "error",
+                            "file": "TEST_CODE",
+                            "line": 21,
+                            "col": "1",
+                            "message": "'pretraga' was not declared in this scope",
+                            "code": "pretraga(s,9999);"
+                        }
+                    ]
+                }
+            }
+        }
+    },
+    "time": 1668970000
+}
