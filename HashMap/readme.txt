@@ -1,0 +1,1 @@
+This project implements a generic hash map (HashMapa) in C++ using open addressing for collision resolution. It extends an abstract base class (Mapa), which defines the core functionalities of a map-like data structure.
