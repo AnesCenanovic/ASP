@@ -1,0 +1,1221 @@
+{
+    "buildhost_description": {
+        "id": "etf.c9prim2",
+        "os": "Linux 5.13.0-39-generic x86_64\nUbuntu 20.04.5 LTS\n"
+    },
+    "tools": {
+        "compile": "9.4.0",
+        "compile[debug]": "9.4.0",
+        "debug": "9.2",
+        "profile[memcheck]": "valgrind-3.15.0",
+        "profile[sgcheck]": "valgrind-3.15.0"
+    },
+    "status": 4,
+    "test_results": {
+        "1907": {
+            "success": false,
+            "status": 3,
+            "tools": {
+                "patch": {
+                    "success": true
+                },
+                "compile[debug]": {
+                    "status": 5,
+                    "duration": 1,
+                    "output": "main.cpp: In function ‘int main()’:\nmain.cpp:148:1: error: ‘HashMapaLan’ was not declared in this scope; did you mean ‘HashMapa’?\n  148 | HashMapaLan<std::string,std::string> m;\n      | ^~~~~~~~~~~\n      | HashMapa\nmain.cpp:148:24: error: expected primary-expression before ‘,’ token\n  148 | HashMapaLan<std::string,std::string> m;\n      |                        ^\nmain.cpp:148:36: error: expected primary-expression before ‘>’ token\n  148 | HashMapaLan<std::string,std::string> m;\n      |                                    ^\nmain.cpp:148:38: error: ‘m’ was not declared in this scope; did you mean ‘tm’?\n  148 | HashMapaLan<std::string,std::string> m;\n      |                                      ^\n      |                                      tm",
+                    "exit_code": 1,
+                    "success": false,
+                    "parsed_output": [
+                        {
+                            "type": "error",
+                            "file": "TEST_CODE",
+                            "line": 15,
+                            "col": "1",
+                            "message": "'HashMapaLan' was not declared in this scope; did you mean 'HashMapa'?",
+                            "code": "HashMapaLan<std::string,std::string> m;"
+                        },
+                        {
+                            "type": "error",
+                            "file": "TEST_CODE",
+                            "line": 15,
+                            "col": "24",
+                            "message": "expected primary-expression before ',' token",
+                            "code": "HashMapaLan<std::string,std::string> m;"
+                        },
+                        {
+                            "type": "error",
+                            "file": "TEST_CODE",
+                            "line": 15,
+                            "col": "36",
+                            "message": "expected primary-expression before '>' token",
+                            "code": "HashMapaLan<std::string,std::string> m;"
+                        },
+                        {
+                            "type": "error",
+                            "file": "TEST_CODE",
+                            "line": 15,
+                            "col": "38",
+                            "message": "'m' was not declared in this scope; did you mean 'tm'?",
+                            "code": "HashMapaLan<std::string,std::string> m;"
+                        }
+                    ]
+                }
+            }
+        },
+        "1908": {
+            "success": false,
+            "status": 3,
+            "tools": {
+                "patch": {
+                    "success": true
+                },
+                "compile[debug]": {
+                    "status": 5,
+                    "duration": 0,
+                    "output": "main.cpp: In function ‘int main()’:\nmain.cpp:147:1: error: ‘HashMapaLan’ was not declared in this scope; did you mean ‘HashMapa’?\n  147 | HashMapaLan<std::string,std::string> m;\n      | ^~~~~~~~~~~\n      | HashMapa\nmain.cpp:147:24: error: expected primary-expression before ‘,’ token\n  147 | HashMapaLan<std::string,std::string> m;\n      |                        ^\nmain.cpp:147:36: error: expected primary-expression before ‘>’ token\n  147 | HashMapaLan<std::string,std::string> m;\n      |                                    ^\nmain.cpp:147:38: error: ‘m’ was not declared in this scope; did you mean ‘tm’?\n  147 | HashMapaLan<std::string,std::string> m;\n      |                                      ^\n      |                                      tm\nmain.cpp:153:25: error: expected primary-expression before ‘,’ token\n  153 |  HashMapaLan<std::string,std::string> m2(m);\n      |                         ^\nmain.cpp:153:37: error: expected primary-expression before ‘>’ token\n  153 |  HashMapaLan<std::string,std::string> m2(m);\n      |                                     ^\nmain.cpp:153:39: error: ‘m2’ was not declared in this scope\n  153 |  HashMapaLan<std::string,std::string> m2(m);\n      |                                       ^~\nmain.cpp:155:25: error: expected primary-expression before ‘,’ token\n  155 |  HashMapaLan<std::string,std::string> m3;\n      |                         ^\nmain.cpp:155:37: error: expected primary-expression before ‘>’ token\n  155 |  HashMapaLan<std::string,std::string> m3;\n      |                                     ^\nmain.cpp:155:39: error: ‘m3’ was not declared in this scope\n  155 |  HashMapaLan<std::string,std::string> m3;\n      |                                       ^~",
+                    "exit_code": 1,
+                    "success": false,
+                    "parsed_output": [
+                        {
+                            "type": "error",
+                            "file": "TEST_CODE",
+                            "line": 14,
+                            "col": "1",
+                            "message": "'HashMapaLan' was not declared in this scope; did you mean 'HashMapa'?",
+                            "code": "HashMapaLan<std::string,std::string> m;"
+                        },
+                        {
+                            "type": "error",
+                            "file": "TEST_CODE",
+                            "line": 14,
+                            "col": "24",
+                            "message": "expected primary-expression before ',' token",
+                            "code": "HashMapaLan<std::string,std::string> m;"
+                        },
+                        {
+                            "type": "error",
+                            "file": "TEST_CODE",
+                            "line": 14,
+                            "col": "36",
+                            "message": "expected primary-expression before '>' token",
+                            "code": "HashMapaLan<std::string,std::string> m;"
+                        },
+                        {
+                            "type": "error",
+                            "file": "TEST_CODE",
+                            "line": 14,
+                            "col": "38",
+                            "message": "'m' was not declared in this scope; did you mean 'tm'?",
+                            "code": "HashMapaLan<std::string,std::string> m;"
+                        },
+                        {
+                            "type": "error",
+                            "file": "TEST_CODE",
+                            "line": 20,
+                            "col": "25",
+                            "message": "expected primary-expression before ',' token",
+                            "code": "HashMapaLan<std::string,std::string> m2(m);"
+                        },
+                        {
+                            "type": "error",
+                            "file": "TEST_CODE",
+                            "line": 20,
+                            "col": "37",
+                            "message": "expected primary-expression before '>' token",
+                            "code": "HashMapaLan<std::string,std::string> m2(m);"
+                        },
+                        {
+                            "type": "error",
+                            "file": "TEST_CODE",
+                            "line": 20,
+                            "col": "39",
+                            "message": "'m2' was not declared in this scope",
+                            "code": "HashMapaLan<std::string,std::string> m2(m);"
+                        },
+                        {
+                            "type": "error",
+                            "file": "TEST_CODE",
+                            "line": 22,
+                            "col": "25",
+                            "message": "expected primary-expression before ',' token",
+                            "code": "HashMapaLan<std::string,std::string> m3;"
+                        },
+                        {
+                            "type": "error",
+                            "file": "TEST_CODE",
+                            "line": 22,
+                            "col": "37",
+                            "message": "expected primary-expression before '>' token",
+                            "code": "HashMapaLan<std::string,std::string> m3;"
+                        },
+                        {
+                            "type": "error",
+                            "file": "TEST_CODE",
+                            "line": 22,
+                            "col": "39",
+                            "message": "'m3' was not declared in this scope",
+                            "code": "HashMapaLan<std::string,std::string> m3;"
+                        }
+                    ]
+                }
+            }
+        },
+        "1909": {
+            "success": false,
+            "status": 3,
+            "tools": {
+                "patch": {
+                    "success": true
+                },
+                "compile[debug]": {
+                    "status": 5,
+                    "duration": 1,
+                    "output": "main.cpp: In function ‘int main()’:\nmain.cpp:149:1: error: ‘HashMapaLan’ was not declared in this scope; did you mean ‘HashMapa’?\n  149 | HashMapaLan <std::string, std::vector<std::string> > m;\n      | ^~~~~~~~~~~\n      | HashMapa\nmain.cpp:149:25: error: expected primary-expression before ‘,’ token\n  149 | HashMapaLan <std::string, std::vector<std::string> > m;\n      |                         ^\nmain.cpp:149:52: error: expected primary-expression before ‘>’ token\n  149 | HashMapaLan <std::string, std::vector<std::string> > m;\n      |                                                    ^\nmain.cpp:149:54: error: ‘m’ was not declared in this scope; did you mean ‘tm’?\n  149 | HashMapaLan <std::string, std::vector<std::string> > m;\n      |                                                      ^\n      |                                                      tm",
+                    "exit_code": 1,
+                    "success": false,
+                    "parsed_output": [
+                        {
+                            "type": "error",
+                            "file": "TEST_CODE",
+                            "line": 16,
+                            "col": "1",
+                            "message": "'HashMapaLan' was not declared in this scope; did you mean 'HashMapa'?",
+                            "code": "HashMapaLan <std::string, std::vector<std::string> > m;"
+                        },
+                        {
+                            "type": "error",
+                            "file": "TEST_CODE",
+                            "line": 16,
+                            "col": "25",
+                            "message": "expected primary-expression before ',' token",
+                            "code": "HashMapaLan <std::string, std::vector<std::string> > m;"
+                        },
+                        {
+                            "type": "error",
+                            "file": "TEST_CODE",
+                            "line": 16,
+                            "col": "52",
+                            "message": "expected primary-expression before '>' token",
+                            "code": "HashMapaLan <std::string, std::vector<std::string> > m;"
+                        },
+                        {
+                            "type": "error",
+                            "file": "TEST_CODE",
+                            "line": 16,
+                            "col": "54",
+                            "message": "'m' was not declared in this scope; did you mean 'tm'?",
+                            "code": "HashMapaLan <std::string, std::vector<std::string> > m;"
+                        }
+                    ]
+                }
+            }
+        },
+        "1910": {
+            "success": false,
+            "status": 3,
+            "tools": {
+                "patch": {
+                    "success": true
+                },
+                "compile[debug]": {
+                    "status": 5,
+                    "duration": 0,
+                    "output": "main.cpp: In function ‘int main()’:\nmain.cpp:144:1: error: ‘HashMapaLan’ was not declared in this scope; did you mean ‘HashMapa’?\n  144 | HashMapaLan <int, int> m;\n      | ^~~~~~~~~~~\n      | HashMapa\nmain.cpp:144:14: error: expected primary-expression before ‘int’\n  144 | HashMapaLan <int, int> m;\n      |              ^~~\nmain.cpp:145:1: error: ‘m’ was not declared in this scope; did you mean ‘tm’?\n  145 | m.definisiHashFunkciju(mojhash);\n      | ^\n      | tm\nmain.cpp:147:7: error: ‘HashMapaLan’ does not name a type; did you mean ‘HashMapa’?\n  147 | const HashMapaLan <int, int>& m2(m);\n      |       ^~~~~~~~~~~\n      |       HashMapa\nmain.cpp:149:9: error: ‘m2’ was not declared in this scope\n  149 | cout << m2.brojElemenata() << \" \"; // 2\n      |         ^~",
+                    "exit_code": 1,
+                    "success": false,
+                    "parsed_output": [
+                        {
+                            "type": "error",
+                            "file": "TEST_CODE",
+                            "line": 11,
+                            "col": "1",
+                            "message": "'HashMapaLan' was not declared in this scope; did you mean 'HashMapa'?",
+                            "code": "HashMapaLan <int, int> m;"
+                        },
+                        {
+                            "type": "error",
+                            "file": "TEST_CODE",
+                            "line": 11,
+                            "col": "14",
+                            "message": "expected primary-expression before 'int'",
+                            "code": "HashMapaLan <int, int> m;"
+                        },
+                        {
+                            "type": "error",
+                            "file": "TEST_CODE",
+                            "line": 12,
+                            "col": "1",
+                            "message": "'m' was not declared in this scope; did you mean 'tm'?",
+                            "code": "m.definisiHashFunkciju(mojhash);"
+                        },
+                        {
+                            "type": "error",
+                            "file": "TEST_CODE",
+                            "line": 14,
+                            "col": "7",
+                            "message": "'HashMapaLan' does not name a type; did you mean 'HashMapa'?",
+                            "code": "const HashMapaLan <int, int>& m2(m);"
+                        },
+                        {
+                            "type": "error",
+                            "file": "TEST_CODE",
+                            "line": 16,
+                            "col": "9",
+                            "message": "'m2' was not declared in this scope",
+                            "code": "cout << m2.brojElemenata() << \" \"; // 2"
+                        }
+                    ]
+                }
+            }
+        },
+        "1911": {
+            "success": false,
+            "status": 3,
+            "tools": {
+                "patch": {
+                    "success": true
+                },
+                "compile[debug]": {
+                    "status": 5,
+                    "duration": 1,
+                    "output": "main.cpp: In function ‘int main()’:\nmain.cpp:139:1: error: ‘HashMapaLan’ was not declared in this scope; did you mean ‘HashMapa’?\n  139 | HashMapaLan<std::string,std::string> m;\n      | ^~~~~~~~~~~\n      | HashMapa\nmain.cpp:139:24: error: expected primary-expression before ‘,’ token\n  139 | HashMapaLan<std::string,std::string> m;\n      |                        ^\nmain.cpp:139:36: error: expected primary-expression before ‘>’ token\n  139 | HashMapaLan<std::string,std::string> m;\n      |                                    ^\nmain.cpp:139:38: error: ‘m’ was not declared in this scope; did you mean ‘tm’?\n  139 | HashMapaLan<std::string,std::string> m;\n      |                                      ^\n      |                                      tm",
+                    "exit_code": 1,
+                    "success": false,
+                    "parsed_output": [
+                        {
+                            "type": "error",
+                            "file": "TEST_CODE",
+                            "line": 6,
+                            "col": "1",
+                            "message": "'HashMapaLan' was not declared in this scope; did you mean 'HashMapa'?",
+                            "code": "HashMapaLan<std::string,std::string> m;"
+                        },
+                        {
+                            "type": "error",
+                            "file": "TEST_CODE",
+                            "line": 6,
+                            "col": "24",
+                            "message": "expected primary-expression before ',' token",
+                            "code": "HashMapaLan<std::string,std::string> m;"
+                        },
+                        {
+                            "type": "error",
+                            "file": "TEST_CODE",
+                            "line": 6,
+                            "col": "36",
+                            "message": "expected primary-expression before '>' token",
+                            "code": "HashMapaLan<std::string,std::string> m;"
+                        },
+                        {
+                            "type": "error",
+                            "file": "TEST_CODE",
+                            "line": 6,
+                            "col": "38",
+                            "message": "'m' was not declared in this scope; did you mean 'tm'?",
+                            "code": "HashMapaLan<std::string,std::string> m;"
+                        }
+                    ]
+                }
+            }
+        },
+        "2103": {
+            "success": false,
+            "status": 3,
+            "tools": {
+                "patch": {
+                    "success": true
+                },
+                "compile[debug]": {
+                    "status": 5,
+                    "duration": 0,
+                    "output": "main.cpp: In function ‘int main()’:\nmain.cpp:143:1: error: ‘HashMapaLan’ was not declared in this scope; did you mean ‘HashMapa’?\n  143 | HashMapaLan<int, int> m;\n      | ^~~~~~~~~~~\n      | HashMapa\nmain.cpp:143:13: error: expected primary-expression before ‘int’\n  143 | HashMapaLan<int, int> m;\n      |             ^~~\nmain.cpp:144:1: error: ‘m’ was not declared in this scope; did you mean ‘tm’?\n  144 | m.definisiHashFunkciju(glupihash);\n      | ^\n      | tm",
+                    "exit_code": 1,
+                    "success": false,
+                    "parsed_output": [
+                        {
+                            "type": "error",
+                            "file": "TEST_CODE",
+                            "line": 10,
+                            "col": "1",
+                            "message": "'HashMapaLan' was not declared in this scope; did you mean 'HashMapa'?",
+                            "code": "HashMapaLan<int, int> m;"
+                        },
+                        {
+                            "type": "error",
+                            "file": "TEST_CODE",
+                            "line": 10,
+                            "col": "13",
+                            "message": "expected primary-expression before 'int'",
+                            "code": "HashMapaLan<int, int> m;"
+                        },
+                        {
+                            "type": "error",
+                            "file": "TEST_CODE",
+                            "line": 11,
+                            "col": "1",
+                            "message": "'m' was not declared in this scope; did you mean 'tm'?",
+                            "code": "m.definisiHashFunkciju(glupihash);"
+                        }
+                    ]
+                }
+            }
+        },
+        "2104": {
+            "success": false,
+            "status": 3,
+            "tools": {
+                "patch": {
+                    "success": true
+                },
+                "compile[debug]": {
+                    "status": 5,
+                    "duration": 1,
+                    "output": "main.cpp: In function ‘int main()’:\nmain.cpp:143:1: error: ‘HashMapaLan’ was not declared in this scope; did you mean ‘HashMapa’?\n  143 | HashMapaLan<int, int> m;\n      | ^~~~~~~~~~~\n      | HashMapa\nmain.cpp:143:13: error: expected primary-expression before ‘int’\n  143 | HashMapaLan<int, int> m;\n      |             ^~~\nmain.cpp:144:1: error: ‘m’ was not declared in this scope; did you mean ‘tm’?\n  144 | m.definisiHashFunkciju(glupihash);\n      | ^\n      | tm",
+                    "exit_code": 1,
+                    "success": false,
+                    "parsed_output": [
+                        {
+                            "type": "error",
+                            "file": "TEST_CODE",
+                            "line": 10,
+                            "col": "1",
+                            "message": "'HashMapaLan' was not declared in this scope; did you mean 'HashMapa'?",
+                            "code": "HashMapaLan<int, int> m;"
+                        },
+                        {
+                            "type": "error",
+                            "file": "TEST_CODE",
+                            "line": 10,
+                            "col": "13",
+                            "message": "expected primary-expression before 'int'",
+                            "code": "HashMapaLan<int, int> m;"
+                        },
+                        {
+                            "type": "error",
+                            "file": "TEST_CODE",
+                            "line": 11,
+                            "col": "1",
+                            "message": "'m' was not declared in this scope; did you mean 'tm'?",
+                            "code": "m.definisiHashFunkciju(glupihash);"
+                        }
+                    ]
+                }
+            }
+        },
+        "2105": {
+            "success": false,
+            "status": 3,
+            "tools": {
+                "patch": {
+                    "success": true
+                },
+                "compile[debug]": {
+                    "status": 5,
+                    "duration": 0,
+                    "output": "main.cpp: In function ‘int main()’:\nmain.cpp:137:1: error: ‘UsmjereniGraf’ was not declared in this scope\n  137 | UsmjereniGraf<bool> *g = new ListaGraf<bool>(6);\n      | ^~~~~~~~~~~~~\nmain.cpp:137:15: error: expected primary-expression before ‘bool’\n  137 | UsmjereniGraf<bool> *g = new ListaGraf<bool>(6);\n      |               ^~~~\nmain.cpp:138:3: error: ‘g’ was not declared in this scope\n  138 |   g->dodajGranu(0, 1, 2.5);\n      |   ^\nmain.cpp:149:10: error: type ‘<type error>’ argument given to ‘delete’, expected pointer\n  149 |   delete g;\n      |          ^",
+                    "exit_code": 1,
+                    "success": false,
+                    "parsed_output": [
+                        {
+                            "type": "error",
+                            "file": "TEST_CODE",
+                            "line": 4,
+                            "col": "1",
+                            "message": "'UsmjereniGraf' was not declared in this scope",
+                            "code": "UsmjereniGraf<bool> *g = new ListaGraf<bool>(6);"
+                        },
+                        {
+                            "type": "error",
+                            "file": "TEST_CODE",
+                            "line": 4,
+                            "col": "15",
+                            "message": "expected primary-expression before 'bool'",
+                            "code": "UsmjereniGraf<bool> *g = new ListaGraf<bool>(6);"
+                        },
+                        {
+                            "type": "error",
+                            "file": "TEST_CODE",
+                            "line": 5,
+                            "col": "3",
+                            "message": "'g' was not declared in this scope",
+                            "code": "g->dodajGranu(0, 1, 2.5);"
+                        },
+                        {
+                            "type": "error",
+                            "file": "TEST_CODE",
+                            "line": 16,
+                            "col": "10",
+                            "message": "type '<type error>' argument given to 'delete', expected pointer",
+                            "code": "delete g;"
+                        }
+                    ]
+                }
+            }
+        },
+        "2106": {
+            "success": false,
+            "status": 3,
+            "tools": {
+                "patch": {
+                    "success": true
+                },
+                "compile[debug]": {
+                    "status": 5,
+                    "duration": 1,
+                    "output": "main.cpp: In function ‘int main()’:\nmain.cpp:137:1: error: ‘UsmjereniGraf’ was not declared in this scope\n  137 | UsmjereniGraf<bool> *g = new ListaGraf<bool>(6);\n      | ^~~~~~~~~~~~~\nmain.cpp:137:15: error: expected primary-expression before ‘bool’\n  137 | UsmjereniGraf<bool> *g = new ListaGraf<bool>(6);\n      |               ^~~~\nmain.cpp:138:3: error: ‘g’ was not declared in this scope\n  138 |   g->dodajGranu(0, 1, 2.5);\n      |   ^\nmain.cpp:151:10: error: type ‘<type error>’ argument given to ‘delete’, expected pointer\n  151 |   delete g;\n      |          ^",
+                    "exit_code": 1,
+                    "success": false,
+                    "parsed_output": [
+                        {
+                            "type": "error",
+                            "file": "TEST_CODE",
+                            "line": 4,
+                            "col": "1",
+                            "message": "'UsmjereniGraf' was not declared in this scope",
+                            "code": "UsmjereniGraf<bool> *g = new ListaGraf<bool>(6);"
+                        },
+                        {
+                            "type": "error",
+                            "file": "TEST_CODE",
+                            "line": 4,
+                            "col": "15",
+                            "message": "expected primary-expression before 'bool'",
+                            "code": "UsmjereniGraf<bool> *g = new ListaGraf<bool>(6);"
+                        },
+                        {
+                            "type": "error",
+                            "file": "TEST_CODE",
+                            "line": 5,
+                            "col": "3",
+                            "message": "'g' was not declared in this scope",
+                            "code": "g->dodajGranu(0, 1, 2.5);"
+                        },
+                        {
+                            "type": "error",
+                            "file": "TEST_CODE",
+                            "line": 18,
+                            "col": "10",
+                            "message": "type '<type error>' argument given to 'delete', expected pointer",
+                            "code": "delete g;"
+                        }
+                    ]
+                }
+            }
+        },
+        "2107": {
+            "success": false,
+            "status": 3,
+            "tools": {
+                "patch": {
+                    "success": true
+                },
+                "compile[debug]": {
+                    "status": 5,
+                    "duration": 0,
+                    "output": "main.cpp: In function ‘int main()’:\nmain.cpp:137:1: error: ‘UsmjereniGraf’ was not declared in this scope\n  137 | UsmjereniGraf<bool> *g = new ListaGraf<bool>(4);\n      | ^~~~~~~~~~~~~\nmain.cpp:137:15: error: expected primary-expression before ‘bool’\n  137 | UsmjereniGraf<bool> *g = new ListaGraf<bool>(4);\n      |               ^~~~\nmain.cpp:138:3: error: ‘g’ was not declared in this scope\n  138 |   g->dodajGranu(0, 1, 2.5);\n      |   ^\nmain.cpp:147:10: error: type ‘<type error>’ argument given to ‘delete’, expected pointer\n  147 |   delete g;\n      |          ^",
+                    "exit_code": 1,
+                    "success": false,
+                    "parsed_output": [
+                        {
+                            "type": "error",
+                            "file": "TEST_CODE",
+                            "line": 4,
+                            "col": "1",
+                            "message": "'UsmjereniGraf' was not declared in this scope",
+                            "code": "UsmjereniGraf<bool> *g = new ListaGraf<bool>(4);"
+                        },
+                        {
+                            "type": "error",
+                            "file": "TEST_CODE",
+                            "line": 4,
+                            "col": "15",
+                            "message": "expected primary-expression before 'bool'",
+                            "code": "UsmjereniGraf<bool> *g = new ListaGraf<bool>(4);"
+                        },
+                        {
+                            "type": "error",
+                            "file": "TEST_CODE",
+                            "line": 5,
+                            "col": "3",
+                            "message": "'g' was not declared in this scope",
+                            "code": "g->dodajGranu(0, 1, 2.5);"
+                        },
+                        {
+                            "type": "error",
+                            "file": "TEST_CODE",
+                            "line": 14,
+                            "col": "10",
+                            "message": "type '<type error>' argument given to 'delete', expected pointer",
+                            "code": "delete g;"
+                        }
+                    ]
+                }
+            }
+        },
+        "2108": {
+            "success": false,
+            "status": 3,
+            "tools": {
+                "patch": {
+                    "success": true
+                },
+                "compile[debug]": {
+                    "status": 5,
+                    "duration": 1,
+                    "output": "main.cpp: In function ‘int main()’:\nmain.cpp:139:1: error: ‘UsmjereniGraf’ was not declared in this scope\n  139 | UsmjereniGraf<std::string> *g = new ListaGraf<std::string>(4);\n      | ^~~~~~~~~~~~~\nmain.cpp:139:26: error: expected primary-expression before ‘>’ token\n  139 | UsmjereniGraf<std::string> *g = new ListaGraf<std::string>(4);\n      |                          ^\nmain.cpp:139:29: error: ‘g’ was not declared in this scope\n  139 | UsmjereniGraf<std::string> *g = new ListaGraf<std::string>(4);\n      |                             ^\nmain.cpp:139:37: error: ‘ListaGraf’ does not name a type\n  139 | UsmjereniGraf<std::string> *g = new ListaGraf<std::string>(4);\n      |                                     ^~~~~~~~~\nmain.cpp:139:58: error: expected primary-expression before ‘>’ token\n  139 | UsmjereniGraf<std::string> *g = new ListaGraf<std::string>(4);\n      |                                                          ^\nmain.cpp:149:10: error: type ‘<type error>’ argument given to ‘delete’, expected pointer\n  149 |   delete g;\n      |          ^",
+                    "exit_code": 1,
+                    "success": false,
+                    "parsed_output": [
+                        {
+                            "type": "error",
+                            "file": "TEST_CODE",
+                            "line": 6,
+                            "col": "1",
+                            "message": "'UsmjereniGraf' was not declared in this scope",
+                            "code": "UsmjereniGraf<std::string> *g = new ListaGraf<std::string>(4);"
+                        },
+                        {
+                            "type": "error",
+                            "file": "TEST_CODE",
+                            "line": 6,
+                            "col": "26",
+                            "message": "expected primary-expression before '>' token",
+                            "code": "UsmjereniGraf<std::string> *g = new ListaGraf<std::string>(4);"
+                        },
+                        {
+                            "type": "error",
+                            "file": "TEST_CODE",
+                            "line": 6,
+                            "col": "29",
+                            "message": "'g' was not declared in this scope",
+                            "code": "UsmjereniGraf<std::string> *g = new ListaGraf<std::string>(4);"
+                        },
+                        {
+                            "type": "error",
+                            "file": "TEST_CODE",
+                            "line": 6,
+                            "col": "37",
+                            "message": "'ListaGraf' does not name a type",
+                            "code": "UsmjereniGraf<std::string> *g = new ListaGraf<std::string>(4);"
+                        },
+                        {
+                            "type": "error",
+                            "file": "TEST_CODE",
+                            "line": 6,
+                            "col": "58",
+                            "message": "expected primary-expression before '>' token",
+                            "code": "UsmjereniGraf<std::string> *g = new ListaGraf<std::string>(4);"
+                        },
+                        {
+                            "type": "error",
+                            "file": "TEST_CODE",
+                            "line": 16,
+                            "col": "10",
+                            "message": "type '<type error>' argument given to 'delete', expected pointer",
+                            "code": "delete g;"
+                        }
+                    ]
+                }
+            }
+        },
+        "2109": {
+            "success": false,
+            "status": 3,
+            "tools": {
+                "patch": {
+                    "success": true
+                },
+                "compile[debug]": {
+                    "status": 5,
+                    "duration": 0,
+                    "output": "main.cpp: In function ‘int main()’:\nmain.cpp:139:1: error: ‘UsmjereniGraf’ was not declared in this scope\n  139 | UsmjereniGraf<std::string> *g = new ListaGraf<std::string>(4);\n      | ^~~~~~~~~~~~~\nmain.cpp:139:26: error: expected primary-expression before ‘>’ token\n  139 | UsmjereniGraf<std::string> *g = new ListaGraf<std::string>(4);\n      |                          ^\nmain.cpp:139:29: error: ‘g’ was not declared in this scope\n  139 | UsmjereniGraf<std::string> *g = new ListaGraf<std::string>(4);\n      |                             ^\nmain.cpp:139:37: error: ‘ListaGraf’ does not name a type\n  139 | UsmjereniGraf<std::string> *g = new ListaGraf<std::string>(4);\n      |                                     ^~~~~~~~~\nmain.cpp:139:58: error: expected primary-expression before ‘>’ token\n  139 | UsmjereniGraf<std::string> *g = new ListaGraf<std::string>(4);\n      |                                                          ^\nmain.cpp:144:10: error: type ‘<type error>’ argument given to ‘delete’, expected pointer\n  144 |   delete g;\n      |          ^",
+                    "exit_code": 1,
+                    "success": false,
+                    "parsed_output": [
+                        {
+                            "type": "error",
+                            "file": "TEST_CODE",
+                            "line": 6,
+                            "col": "1",
+                            "message": "'UsmjereniGraf' was not declared in this scope",
+                            "code": "UsmjereniGraf<std::string> *g = new ListaGraf<std::string>(4);"
+                        },
+                        {
+                            "type": "error",
+                            "file": "TEST_CODE",
+                            "line": 6,
+                            "col": "26",
+                            "message": "expected primary-expression before '>' token",
+                            "code": "UsmjereniGraf<std::string> *g = new ListaGraf<std::string>(4);"
+                        },
+                        {
+                            "type": "error",
+                            "file": "TEST_CODE",
+                            "line": 6,
+                            "col": "29",
+                            "message": "'g' was not declared in this scope",
+                            "code": "UsmjereniGraf<std::string> *g = new ListaGraf<std::string>(4);"
+                        },
+                        {
+                            "type": "error",
+                            "file": "TEST_CODE",
+                            "line": 6,
+                            "col": "37",
+                            "message": "'ListaGraf' does not name a type",
+                            "code": "UsmjereniGraf<std::string> *g = new ListaGraf<std::string>(4);"
+                        },
+                        {
+                            "type": "error",
+                            "file": "TEST_CODE",
+                            "line": 6,
+                            "col": "58",
+                            "message": "expected primary-expression before '>' token",
+                            "code": "UsmjereniGraf<std::string> *g = new ListaGraf<std::string>(4);"
+                        },
+                        {
+                            "type": "error",
+                            "file": "TEST_CODE",
+                            "line": 11,
+                            "col": "10",
+                            "message": "type '<type error>' argument given to 'delete', expected pointer",
+                            "code": "delete g;"
+                        }
+                    ]
+                }
+            }
+        },
+        "2110": {
+            "success": false,
+            "status": 3,
+            "tools": {
+                "patch": {
+                    "success": true
+                },
+                "compile[debug]": {
+                    "status": 5,
+                    "duration": 1,
+                    "output": "main.cpp: In function ‘int main()’:\nmain.cpp:139:1: error: ‘UsmjereniGraf’ was not declared in this scope\n  139 | UsmjereniGraf<std::string> *g = new ListaGraf<std::string>(4);\n      | ^~~~~~~~~~~~~\nmain.cpp:139:26: error: expected primary-expression before ‘>’ token\n  139 | UsmjereniGraf<std::string> *g = new ListaGraf<std::string>(4);\n      |                          ^\nmain.cpp:139:29: error: ‘g’ was not declared in this scope\n  139 | UsmjereniGraf<std::string> *g = new ListaGraf<std::string>(4);\n      |                             ^\nmain.cpp:139:37: error: ‘ListaGraf’ does not name a type\n  139 | UsmjereniGraf<std::string> *g = new ListaGraf<std::string>(4);\n      |                                     ^~~~~~~~~\nmain.cpp:139:58: error: expected primary-expression before ‘>’ token\n  139 | UsmjereniGraf<std::string> *g = new ListaGraf<std::string>(4);\n      |                                                          ^\nmain.cpp:145:10: error: type ‘<type error>’ argument given to ‘delete’, expected pointer\n  145 |   delete g;\n      |          ^",
+                    "exit_code": 1,
+                    "success": false,
+                    "parsed_output": [
+                        {
+                            "type": "error",
+                            "file": "TEST_CODE",
+                            "line": 6,
+                            "col": "1",
+                            "message": "'UsmjereniGraf' was not declared in this scope",
+                            "code": "UsmjereniGraf<std::string> *g = new ListaGraf<std::string>(4);"
+                        },
+                        {
+                            "type": "error",
+                            "file": "TEST_CODE",
+                            "line": 6,
+                            "col": "26",
+                            "message": "expected primary-expression before '>' token",
+                            "code": "UsmjereniGraf<std::string> *g = new ListaGraf<std::string>(4);"
+                        },
+                        {
+                            "type": "error",
+                            "file": "TEST_CODE",
+                            "line": 6,
+                            "col": "29",
+                            "message": "'g' was not declared in this scope",
+                            "code": "UsmjereniGraf<std::string> *g = new ListaGraf<std::string>(4);"
+                        },
+                        {
+                            "type": "error",
+                            "file": "TEST_CODE",
+                            "line": 6,
+                            "col": "37",
+                            "message": "'ListaGraf' does not name a type",
+                            "code": "UsmjereniGraf<std::string> *g = new ListaGraf<std::string>(4);"
+                        },
+                        {
+                            "type": "error",
+                            "file": "TEST_CODE",
+                            "line": 6,
+                            "col": "58",
+                            "message": "expected primary-expression before '>' token",
+                            "code": "UsmjereniGraf<std::string> *g = new ListaGraf<std::string>(4);"
+                        },
+                        {
+                            "type": "error",
+                            "file": "TEST_CODE",
+                            "line": 12,
+                            "col": "10",
+                            "message": "type '<type error>' argument given to 'delete', expected pointer",
+                            "code": "delete g;"
+                        }
+                    ]
+                }
+            }
+        },
+        "2111": {
+            "success": false,
+            "status": 3,
+            "tools": {
+                "patch": {
+                    "success": true
+                },
+                "compile[debug]": {
+                    "status": 5,
+                    "duration": 0,
+                    "output": "main.cpp: In function ‘int main()’:\nmain.cpp:139:1: error: ‘UsmjereniGraf’ was not declared in this scope\n  139 | UsmjereniGraf<std::string> *g = new ListaGraf<std::string>(4);\n      | ^~~~~~~~~~~~~\nmain.cpp:139:26: error: expected primary-expression before ‘>’ token\n  139 | UsmjereniGraf<std::string> *g = new ListaGraf<std::string>(4);\n      |                          ^\nmain.cpp:139:29: error: ‘g’ was not declared in this scope\n  139 | UsmjereniGraf<std::string> *g = new ListaGraf<std::string>(4);\n      |                             ^\nmain.cpp:139:37: error: ‘ListaGraf’ does not name a type\n  139 | UsmjereniGraf<std::string> *g = new ListaGraf<std::string>(4);\n      |                                     ^~~~~~~~~\nmain.cpp:139:58: error: expected primary-expression before ‘>’ token\n  139 | UsmjereniGraf<std::string> *g = new ListaGraf<std::string>(4);\n      |                                                          ^\nmain.cpp:150:8: error: type ‘<type error>’ argument given to ‘delete’, expected pointer\n  150 | delete g;\n      |        ^",
+                    "exit_code": 1,
+                    "success": false,
+                    "parsed_output": [
+                        {
+                            "type": "error",
+                            "file": "TEST_CODE",
+                            "line": 6,
+                            "col": "1",
+                            "message": "'UsmjereniGraf' was not declared in this scope",
+                            "code": "UsmjereniGraf<std::string> *g = new ListaGraf<std::string>(4);"
+                        },
+                        {
+                            "type": "error",
+                            "file": "TEST_CODE",
+                            "line": 6,
+                            "col": "26",
+                            "message": "expected primary-expression before '>' token",
+                            "code": "UsmjereniGraf<std::string> *g = new ListaGraf<std::string>(4);"
+                        },
+                        {
+                            "type": "error",
+                            "file": "TEST_CODE",
+                            "line": 6,
+                            "col": "29",
+                            "message": "'g' was not declared in this scope",
+                            "code": "UsmjereniGraf<std::string> *g = new ListaGraf<std::string>(4);"
+                        },
+                        {
+                            "type": "error",
+                            "file": "TEST_CODE",
+                            "line": 6,
+                            "col": "37",
+                            "message": "'ListaGraf' does not name a type",
+                            "code": "UsmjereniGraf<std::string> *g = new ListaGraf<std::string>(4);"
+                        },
+                        {
+                            "type": "error",
+                            "file": "TEST_CODE",
+                            "line": 6,
+                            "col": "58",
+                            "message": "expected primary-expression before '>' token",
+                            "code": "UsmjereniGraf<std::string> *g = new ListaGraf<std::string>(4);"
+                        },
+                        {
+                            "type": "error",
+                            "file": "TEST_CODE",
+                            "line": 17,
+                            "col": "8",
+                            "message": "type '<type error>' argument given to 'delete', expected pointer",
+                            "code": "delete g;"
+                        }
+                    ]
+                }
+            }
+        },
+        "2112": {
+            "success": false,
+            "status": 3,
+            "tools": {
+                "patch": {
+                    "success": true
+                },
+                "compile[debug]": {
+                    "status": 5,
+                    "duration": 1,
+                    "output": "main.cpp: In function ‘int main()’:\nmain.cpp:137:1: error: ‘UsmjereniGraf’ was not declared in this scope\n  137 | UsmjereniGraf<bool> *g = new ListaGraf<bool>(6);\n      | ^~~~~~~~~~~~~\nmain.cpp:137:15: error: expected primary-expression before ‘bool’\n  137 | UsmjereniGraf<bool> *g = new ListaGraf<bool>(6);\n      |               ^~~~\nmain.cpp:138:5: error: ‘g’ was not declared in this scope\n  138 |     g->dodajGranu(0, 1, 2.5);\n      |     ^\nmain.cpp:142:10: error: ‘GranaIterator’ was not declared in this scope\n  142 |     for (GranaIterator<bool> iter = g->dajGranePocetak();\n      |          ^~~~~~~~~~~~~\nmain.cpp:142:24: error: expected primary-expression before ‘bool’\n  142 |     for (GranaIterator<bool> iter = g->dajGranePocetak();\n      |                        ^~~~\nmain.cpp:143:10: error: ‘iter’ was not declared in this scope\n  143 |          iter != g->dajGraneKraj(); ++iter)\n      |          ^~~~\nmain.cpp:147:10: error: type ‘<type error>’ argument given to ‘delete’, expected pointer\n  147 |   delete g;\n      |          ^",
+                    "exit_code": 1,
+                    "success": false,
+                    "parsed_output": [
+                        {
+                            "type": "error",
+                            "file": "TEST_CODE",
+                            "line": 4,
+                            "col": "1",
+                            "message": "'UsmjereniGraf' was not declared in this scope",
+                            "code": "UsmjereniGraf<bool> *g = new ListaGraf<bool>(6);"
+                        },
+                        {
+                            "type": "error",
+                            "file": "TEST_CODE",
+                            "line": 4,
+                            "col": "15",
+                            "message": "expected primary-expression before 'bool'",
+                            "code": "UsmjereniGraf<bool> *g = new ListaGraf<bool>(6);"
+                        },
+                        {
+                            "type": "error",
+                            "file": "TEST_CODE",
+                            "line": 5,
+                            "col": "5",
+                            "message": "'g' was not declared in this scope",
+                            "code": "g->dodajGranu(0, 1, 2.5);"
+                        },
+                        {
+                            "type": "error",
+                            "file": "TEST_CODE",
+                            "line": 9,
+                            "col": "10",
+                            "message": "'GranaIterator' was not declared in this scope",
+                            "code": "for (GranaIterator<bool> iter = g->dajGranePocetak();"
+                        },
+                        {
+                            "type": "error",
+                            "file": "TEST_CODE",
+                            "line": 9,
+                            "col": "24",
+                            "message": "expected primary-expression before 'bool'",
+                            "code": "for (GranaIterator<bool> iter = g->dajGranePocetak();"
+                        },
+                        {
+                            "type": "error",
+                            "file": "TEST_CODE",
+                            "line": 10,
+                            "col": "10",
+                            "message": "'iter' was not declared in this scope",
+                            "code": "iter != g->dajGraneKraj(); ++iter)"
+                        },
+                        {
+                            "type": "error",
+                            "file": "TEST_CODE",
+                            "line": 14,
+                            "col": "10",
+                            "message": "type '<type error>' argument given to 'delete', expected pointer",
+                            "code": "delete g;"
+                        }
+                    ]
+                }
+            }
+        },
+        "2113": {
+            "success": false,
+            "status": 3,
+            "tools": {
+                "patch": {
+                    "success": true
+                },
+                "compile[debug]": {
+                    "status": 5,
+                    "duration": 0,
+                    "output": "main.cpp: In function ‘int main()’:\nmain.cpp:137:1: error: ‘ListaGraf’ was not declared in this scope\n  137 | ListaGraf<bool> g(6);\n      | ^~~~~~~~~\nmain.cpp:137:11: error: expected primary-expression before ‘bool’\n  137 | ListaGraf<bool> g(6);\n      |           ^~~~\nmain.cpp:138:1: error: ‘g’ was not declared in this scope\n  138 | g.dodajGranu(0, 1, 0);\n      | ^",
+                    "exit_code": 1,
+                    "success": false,
+                    "parsed_output": [
+                        {
+                            "type": "error",
+                            "file": "TEST_CODE",
+                            "line": 4,
+                            "col": "1",
+                            "message": "'ListaGraf' was not declared in this scope",
+                            "code": "ListaGraf<bool> g(6);"
+                        },
+                        {
+                            "type": "error",
+                            "file": "TEST_CODE",
+                            "line": 4,
+                            "col": "11",
+                            "message": "expected primary-expression before 'bool'",
+                            "code": "ListaGraf<bool> g(6);"
+                        },
+                        {
+                            "type": "error",
+                            "file": "TEST_CODE",
+                            "line": 5,
+                            "col": "1",
+                            "message": "'g' was not declared in this scope",
+                            "code": "g.dodajGranu(0, 1, 0);"
+                        }
+                    ]
+                }
+            }
+        },
+        "2114": {
+            "success": false,
+            "status": 3,
+            "tools": {
+                "patch": {
+                    "success": true
+                },
+                "compile[debug]": {
+                    "status": 5,
+                    "duration": 1,
+                    "output": "main.cpp: In function ‘int main()’:\nmain.cpp:139:1: error: ‘UsmjereniGraf’ was not declared in this scope\n  139 | UsmjereniGraf<bool> *g = new ListaGraf<bool>(6);\n      | ^~~~~~~~~~~~~\nmain.cpp:139:15: error: expected primary-expression before ‘bool’\n  139 | UsmjereniGraf<bool> *g = new ListaGraf<bool>(6);\n      |               ^~~~\nmain.cpp:140:5: error: ‘g’ was not declared in this scope\n  140 |     g->dodajGranu(0, 1, 2.5);\n      |     ^\nmain.cpp:147:17: error: ‘Cvor’ was not declared in this scope\n  147 |     std::vector<Cvor<bool> > dfs_obilazak;\n      |                 ^~~~\nmain.cpp:147:26: error: template argument 1 is invalid\n  147 |     std::vector<Cvor<bool> > dfs_obilazak;\n      |                          ^\nmain.cpp:147:26: error: template argument 2 is invalid\nmain.cpp:147:28: error: expected unqualified-id before ‘>’ token\n  147 |     std::vector<Cvor<bool> > dfs_obilazak;\n      |                            ^\nmain.cpp:148:12: error: ‘dfs_obilazak’ was not declared in this scope\n  148 |     dfs(g, dfs_obilazak, g->dajCvor(0));\n      |            ^~~~~~~~~~~~\nmain.cpp:148:5: error: ‘dfs’ was not declared in this scope\n  148 |     dfs(g, dfs_obilazak, g->dajCvor(0));\n      |     ^~~\nmain.cpp:151:10: error: type ‘<type error>’ argument given to ‘delete’, expected pointer\n  151 |   delete g;\n      |          ^",
+                    "exit_code": 1,
+                    "success": false,
+                    "parsed_output": [
+                        {
+                            "type": "error",
+                            "file": "TEST_CODE",
+                            "line": 6,
+                            "col": "1",
+                            "message": "'UsmjereniGraf' was not declared in this scope",
+                            "code": "UsmjereniGraf<bool> *g = new ListaGraf<bool>(6);"
+                        },
+                        {
+                            "type": "error",
+                            "file": "TEST_CODE",
+                            "line": 6,
+                            "col": "15",
+                            "message": "expected primary-expression before 'bool'",
+                            "code": "UsmjereniGraf<bool> *g = new ListaGraf<bool>(6);"
+                        },
+                        {
+                            "type": "error",
+                            "file": "TEST_CODE",
+                            "line": 7,
+                            "col": "5",
+                            "message": "'g' was not declared in this scope",
+                            "code": "g->dodajGranu(0, 1, 2.5);"
+                        },
+                        {
+                            "type": "error",
+                            "file": "TEST_CODE",
+                            "line": 14,
+                            "col": "17",
+                            "message": "'Cvor' was not declared in this scope",
+                            "code": "std::vector<Cvor<bool> > dfs_obilazak;"
+                        },
+                        {
+                            "type": "error",
+                            "file": "TEST_CODE",
+                            "line": 14,
+                            "col": "26",
+                            "message": "template argument 1 is invalid",
+                            "code": "std::vector<Cvor<bool> > dfs_obilazak;"
+                        },
+                        {
+                            "type": "error",
+                            "file": "TEST_CODE",
+                            "line": 14,
+                            "col": "26",
+                            "message": "template argument 2 is invalid"
+                        },
+                        {
+                            "type": "error",
+                            "file": "TEST_CODE",
+                            "line": 14,
+                            "col": "28",
+                            "message": "expected unqualified-id before '>' token",
+                            "code": "std::vector<Cvor<bool> > dfs_obilazak;"
+                        },
+                        {
+                            "type": "error",
+                            "file": "TEST_CODE",
+                            "line": 15,
+                            "col": "12",
+                            "message": "'dfs_obilazak' was not declared in this scope",
+                            "code": "dfs(g, dfs_obilazak, g->dajCvor(0));"
+                        },
+                        {
+                            "type": "error",
+                            "file": "TEST_CODE",
+                            "line": 15,
+                            "col": "5",
+                            "message": "'dfs' was not declared in this scope",
+                            "code": "dfs(g, dfs_obilazak, g->dajCvor(0));"
+                        },
+                        {
+                            "type": "error",
+                            "file": "TEST_CODE",
+                            "line": 18,
+                            "col": "10",
+                            "message": "type '<type error>' argument given to 'delete', expected pointer",
+                            "code": "delete g;"
+                        }
+                    ]
+                }
+            }
+        },
+        "2115": {
+            "success": false,
+            "status": 3,
+            "tools": {
+                "patch": {
+                    "success": true
+                },
+                "compile[debug]": {
+                    "status": 5,
+                    "duration": 0,
+                    "output": "main.cpp: In function ‘int main()’:\nmain.cpp:139:1: error: ‘UsmjereniGraf’ was not declared in this scope\n  139 | UsmjereniGraf<bool> *g = new ListaGraf<bool>(6);\n      | ^~~~~~~~~~~~~\nmain.cpp:139:15: error: expected primary-expression before ‘bool’\n  139 | UsmjereniGraf<bool> *g = new ListaGraf<bool>(6);\n      |               ^~~~\nmain.cpp:140:5: error: ‘g’ was not declared in this scope\n  140 |     g->dodajGranu(0, 1, 2.5);\n      |     ^\nmain.cpp:147:17: error: ‘Cvor’ was not declared in this scope\n  147 |     std::vector<Cvor<bool> > bfs_obilazak;\n      |                 ^~~~\nmain.cpp:147:26: error: template argument 1 is invalid\n  147 |     std::vector<Cvor<bool> > bfs_obilazak;\n      |                          ^\nmain.cpp:147:26: error: template argument 2 is invalid\nmain.cpp:147:28: error: expected unqualified-id before ‘>’ token\n  147 |     std::vector<Cvor<bool> > bfs_obilazak;\n      |                            ^\nmain.cpp:148:12: error: ‘bfs_obilazak’ was not declared in this scope\n  148 |     bfs(g, bfs_obilazak, g->dajCvor(0));\n      |            ^~~~~~~~~~~~\nmain.cpp:148:5: error: ‘bfs’ was not declared in this scope\n  148 |     bfs(g, bfs_obilazak, g->dajCvor(0));\n      |     ^~~\nmain.cpp:151:10: error: type ‘<type error>’ argument given to ‘delete’, expected pointer\n  151 |   delete g;\n      |          ^",
+                    "exit_code": 1,
+                    "success": false,
+                    "parsed_output": [
+                        {
+                            "type": "error",
+                            "file": "TEST_CODE",
+                            "line": 6,
+                            "col": "1",
+                            "message": "'UsmjereniGraf' was not declared in this scope",
+                            "code": "UsmjereniGraf<bool> *g = new ListaGraf<bool>(6);"
+                        },
+                        {
+                            "type": "error",
+                            "file": "TEST_CODE",
+                            "line": 6,
+                            "col": "15",
+                            "message": "expected primary-expression before 'bool'",
+                            "code": "UsmjereniGraf<bool> *g = new ListaGraf<bool>(6);"
+                        },
+                        {
+                            "type": "error",
+                            "file": "TEST_CODE",
+                            "line": 7,
+                            "col": "5",
+                            "message": "'g' was not declared in this scope",
+                            "code": "g->dodajGranu(0, 1, 2.5);"
+                        },
+                        {
+                            "type": "error",
+                            "file": "TEST_CODE",
+                            "line": 14,
+                            "col": "17",
+                            "message": "'Cvor' was not declared in this scope",
+                            "code": "std::vector<Cvor<bool> > bfs_obilazak;"
+                        },
+                        {
+                            "type": "error",
+                            "file": "TEST_CODE",
+                            "line": 14,
+                            "col": "26",
+                            "message": "template argument 1 is invalid",
+                            "code": "std::vector<Cvor<bool> > bfs_obilazak;"
+                        },
+                        {
+                            "type": "error",
+                            "file": "TEST_CODE",
+                            "line": 14,
+                            "col": "26",
+                            "message": "template argument 2 is invalid"
+                        },
+                        {
+                            "type": "error",
+                            "file": "TEST_CODE",
+                            "line": 14,
+                            "col": "28",
+                            "message": "expected unqualified-id before '>' token",
+                            "code": "std::vector<Cvor<bool> > bfs_obilazak;"
+                        },
+                        {
+                            "type": "error",
+                            "file": "TEST_CODE",
+                            "line": 15,
+                            "col": "12",
+                            "message": "'bfs_obilazak' was not declared in this scope",
+                            "code": "bfs(g, bfs_obilazak, g->dajCvor(0));"
+                        },
+                        {
+                            "type": "error",
+                            "file": "TEST_CODE",
+                            "line": 15,
+                            "col": "5",
+                            "message": "'bfs' was not declared in this scope",
+                            "code": "bfs(g, bfs_obilazak, g->dajCvor(0));"
+                        },
+                        {
+                            "type": "error",
+                            "file": "TEST_CODE",
+                            "line": 18,
+                            "col": "10",
+                            "message": "type '<type error>' argument given to 'delete', expected pointer",
+                            "code": "delete g;"
+                        }
+                    ]
+                }
+            }
+        },
+        "2116": {
+            "success": false,
+            "status": 3,
+            "tools": {
+                "patch": {
+                    "success": true
+                },
+                "compile[debug]": {
+                    "status": 5,
+                    "duration": 1,
+                    "output": "main.cpp: In function ‘int main()’:\nmain.cpp:139:1: error: ‘UsmjereniGraf’ was not declared in this scope\n  139 | UsmjereniGraf<std::string> *g = new ListaGraf<std::string>(4);\n      | ^~~~~~~~~~~~~\nmain.cpp:139:26: error: expected primary-expression before ‘>’ token\n  139 | UsmjereniGraf<std::string> *g = new ListaGraf<std::string>(4);\n      |                          ^\nmain.cpp:139:29: error: ‘g’ was not declared in this scope\n  139 | UsmjereniGraf<std::string> *g = new ListaGraf<std::string>(4);\n      |                             ^\nmain.cpp:139:37: error: ‘ListaGraf’ does not name a type\n  139 | UsmjereniGraf<std::string> *g = new ListaGraf<std::string>(4);\n      |                                     ^~~~~~~~~\nmain.cpp:139:58: error: expected primary-expression before ‘>’ token\n  139 | UsmjereniGraf<std::string> *g = new ListaGraf<std::string>(4);\n      |                                                          ^\nmain.cpp:145:3: error: ‘Grana’ was not declared in this scope\n  145 |   Grana<std::string> grana = g->dajGranu(0,1);\n      |   ^~~~~\nmain.cpp:145:20: error: expected primary-expression before ‘>’ token\n  145 |   Grana<std::string> grana = g->dajGranu(0,1);\n      |                    ^\nmain.cpp:145:22: error: ‘grana’ was not declared in this scope\n  145 |   Grana<std::string> grana = g->dajGranu(0,1);\n      |                      ^~~~~\nmain.cpp:154:8: error: type ‘<type error>’ argument given to ‘delete’, expected pointer\n  154 | delete g;\n      |        ^",
+                    "exit_code": 1,
+                    "success": false,
+                    "parsed_output": [
+                        {
+                            "type": "error",
+                            "file": "TEST_CODE",
+                            "line": 6,
+                            "col": "1",
+                            "message": "'UsmjereniGraf' was not declared in this scope",
+                            "code": "UsmjereniGraf<std::string> *g = new ListaGraf<std::string>(4);"
+                        },
+                        {
+                            "type": "error",
+                            "file": "TEST_CODE",
+                            "line": 6,
+                            "col": "26",
+                            "message": "expected primary-expression before '>' token",
+                            "code": "UsmjereniGraf<std::string> *g = new ListaGraf<std::string>(4);"
+                        },
+                        {
+                            "type": "error",
+                            "file": "TEST_CODE",
+                            "line": 6,
+                            "col": "29",
+                            "message": "'g' was not declared in this scope",
+                            "code": "UsmjereniGraf<std::string> *g = new ListaGraf<std::string>(4);"
+                        },
+                        {
+                            "type": "error",
+                            "file": "TEST_CODE",
+                            "line": 6,
+                            "col": "37",
+                            "message": "'ListaGraf' does not name a type",
+                            "code": "UsmjereniGraf<std::string> *g = new ListaGraf<std::string>(4);"
+                        },
+                        {
+                            "type": "error",
+                            "file": "TEST_CODE",
+                            "line": 6,
+                            "col": "58",
+                            "message": "expected primary-expression before '>' token",
+                            "code": "UsmjereniGraf<std::string> *g = new ListaGraf<std::string>(4);"
+                        },
+                        {
+                            "type": "error",
+                            "file": "TEST_CODE",
+                            "line": 12,
+                            "col": "3",
+                            "message": "'Grana' was not declared in this scope",
+                            "code": "Grana<std::string> grana = g->dajGranu(0,1);"
+                        },
+                        {
+                            "type": "error",
+                            "file": "TEST_CODE",
+                            "line": 12,
+                            "col": "20",
+                            "message": "expected primary-expression before '>' token",
+                            "code": "Grana<std::string> grana = g->dajGranu(0,1);"
+                        },
+                        {
+                            "type": "error",
+                            "file": "TEST_CODE",
+                            "line": 12,
+                            "col": "22",
+                            "message": "'grana' was not declared in this scope",
+                            "code": "Grana<std::string> grana = g->dajGranu(0,1);"
+                        },
+                        {
+                            "type": "error",
+                            "file": "TEST_CODE",
+                            "line": 21,
+                            "col": "8",
+                            "message": "type '<type error>' argument given to 'delete', expected pointer",
+                            "code": "delete g;"
+                        }
+                    ]
+                }
+            }
+        }
+    },
+    "time": 1673350462
+}
