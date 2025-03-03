@@ -1,0 +1,1 @@
+This project implements a stack (Stek<T>) using a linked list in C++. The stack stores vector<int> elements and supports basic stack operations. Additionally, it includes a binary search (pretraga()) function to find an integer within the stored vectors while preserving the stack structure.
